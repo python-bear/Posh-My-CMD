@@ -26,3 +26,7 @@ Make your CMD prompt look better with colors, powerline characters, environment 
   > https://github.com/microsoft/terminal/tree/main/src/tools/ColorTool
 - To generate Colortool complatible (.itermcolors, .ini) color scheme files:
   > https://terminal.sexy/
+- For the official Oh-My-Posh website, used for making the prompt better/customizing the prompt in terminals:
+  > https://ohmyposh.dev/
+- For the Oh-My-Posh Github website:
+  > https://github.com/JanDeDobbeleer/oh-my-posh
