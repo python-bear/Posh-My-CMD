@@ -30,3 +30,5 @@ Make your CMD prompt look better with colors, powerline characters, environment 
   > https://ohmyposh.dev/
 - For the Oh-My-Posh Github website:
   > https://github.com/JanDeDobbeleer/oh-my-posh
+- For a tutorial on basic personalizaiton of your CMD terminal:
+  > https://www.howtogeek.com/16815/how-to-personalize-the-windows-command-prompt/
