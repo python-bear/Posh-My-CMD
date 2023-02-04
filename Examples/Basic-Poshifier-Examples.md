@@ -10,7 +10,7 @@
          > `[ CURRENT_DRIVE_AND_PATH ] ENTER -[ USER_NAME @ COMPUTER_NAME ] SPACE $$ SPACE`
 
 3. Display the time, backspacing to hide the milliseconds with the default prompt afterwards:  
-         > `CURRENT_TIME CURSOR_LEFT:<3> DEFAULT`
+         > `CURRENT_TIME CURSOR_LEFT:<3> SPACE DEFAULT`
 
 ## With Text Formatting ##
 
