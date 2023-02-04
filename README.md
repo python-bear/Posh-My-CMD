@@ -18,7 +18,7 @@ There are two versions of this application, the Basic-CMD-Poshifier.py version a
   > https://ss64.com/nt/color.html
 - For help on setting environment variables with CMD:  
   > https://www.opentechguides.com/how-to/article/windows-10/113/windows-10-set-path.html
-- For more info on escape characters/sequences, delimeters, and using quotes in CMD/batch files:  
+- For more info on escape characters/sequences, delimiters, and using quotes in CMD/batch files:  
   > https://ss64.com/nt/syntax-esc.html
 - The Wikipedia page for control characters:  
   > https://en.wikipedia.org/wiki/Control_character
@@ -36,5 +36,9 @@ There are two versions of this application, the Basic-CMD-Poshifier.py version a
   > https://ohmyposh.dev/
 - For the Oh-My-Posh Github website:  
   > https://github.com/JanDeDobbeleer/oh-my-posh
-- For a tutorial on basic personalizaiton of your CMD terminal:  
+- For a tutorial on basic personalization of your CMD terminal:  
   > https://www.howtogeek.com/16815/how-to-personalize-the-windows-command-prompt/
+
+## License ##
+
+This project is available under the MIT License, for more information reference the LICENSE.txt file.
