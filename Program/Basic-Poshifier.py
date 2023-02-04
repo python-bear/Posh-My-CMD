@@ -152,6 +152,7 @@ TABS = {
 TEXT_FORMATTING = {
     'DEFAULT_FG_BG': '[0m',  # returns all attributes to the default state prior to modification
     'ADD_BRIGHT_FG': '[1m',  # applies brightness/intensity flag to foreground color
+    'ADD_ITALICS': '[3m',  # applies italic flag
     'REMOVE_BRIGHT_FG': '[22m',  # removes brightness/intensity flag from foreground color
     'ADD_UNDERLINE': '[4m',  # adds underline
     'REMOVE_UNDERLINE': '[24m',  # removes underline
@@ -166,7 +167,7 @@ TEXT_FORMATTING = {
     'MAGENTA_FG': '[35m',  # applies non-bold/bright magenta to foreground
     'CYAN_FG': '[36m',  # applies non-bold/bright cyan to foreground
     'WHITE_FG': '[37m',  # applies non-bold/bright white to foreground
-    '_FG': '[39m',  # applies only the foreground portion of the defaults (see 0)
+    'DEFAULT_FG': '[39m',  # applies only the foreground portion of the defaults (see 0)
     'BLACK_BG': '[40m',  # applies non-bold/bright black to background
     'RED_BG': '[41m',  # applies non-bold/bright red to background
     'GREEN_BG': '[42m',  # applies non-bold/bright green to background
@@ -224,21 +225,11 @@ CONTROL_CHARACTERS = {
 print(f""" 
     # GUIDELINES FOR MAKING PROMPT: #
 
-Write ` ` in between each block.
+Write ` ` in between each block. (put a space between blocks)
 
-Maximum prompt length: {MAX_PROMPT_LEN} *you will reach this faster than you expect*
+Maximum prompt length: {MAX_PROMPT_LEN}
 
-Special characters: {str(SPECIAL_CHARS)}
-
-Display the UNC path whenever you are using a network drive (mapped with NET USE)
-PROMPT $M$_$P$G
-
-Simulate an HP-UX style prompt with the computername and the current folder on separate lines:
-PROMPT=$p$_%username%@%computername%:.
-
-Display the time, backspacing to hide the milliseconds:
-PROMPT=$T$H$H$H$G$S
-
+Special characters:    {str(SPECIAL_CHARS)}
 """)
 
 N_LESS_MAP = {**TEXT_FORMATTING, **CURSOR_SHAPE, **CURSOR_VISIBILITY, **ERASING_AND_CLEARING}
@@ -252,9 +243,11 @@ while True:
     for block in cleaned_prompt:
         if block in N_LESS_MAP:
             processed_prompt.append(f'$E{N_LESS_MAP.get(block, block)}')
-        elif '<n>' in block:
-            n_var = block[block.index('<'):block.index('>')]
-            block = block.replace('<n>', '')
+        elif '<' in block and '>' in block:
+            n_var = block[block.index('<'):block.index('>')+1].replace('>', '').replace('<', '')
+            print(n_var)
+            block = f'{block[:block.index("<") + 1]}n>'
+            print(block)
             for key in N_PRESENT_MAP.keys():
                 if block == key:
                     processed_prompt.append(f'$E{N_PRESENT_MAP.get(block, block).replace("<n>", n_var)}')
