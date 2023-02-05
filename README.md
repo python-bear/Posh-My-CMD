@@ -42,6 +42,8 @@ There are two versions of this application, the Basic-CMD-Poshifier.py version a
   > https://github.com/JanDeDobbeleer/oh-my-posh
 - For a tutorial on basic personalization of your CMD terminal:  
   > https://www.howtogeek.com/16815/how-to-personalize-the-windows-command-prompt/
+- DEC box drawing character table:
+  > https://vt100.net/docs/vt220-rm/ma-0893c-83-special.svg
 
 ## License ##
 
