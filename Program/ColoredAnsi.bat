@@ -1,5 +1,3 @@
-@Cls
-@Title Colored Ansi Script
 @Echo off
 
 
@@ -31,6 +29,16 @@ Setlocal
 
 :SetUp
 	Rem Define foreground and background ANSI colors:
+	Set _FG_BG_RST=[0m && Rem Resets the foregournd and background formatting
+	Set _BRIGHT=[1m && Rem Sets the foreground text to bright/bold, doesn't have an effect in default CMD
+	Set _DIM=[2m && Rem Sets the foreground text to a dimmer color, doesn't have an effect in default CMD
+	Set _ITALICS=[3m && Rem Sets the text to italics, doesn't have an effect in default CMD
+	Set _UNDERLINE=[4m && Rem Give the text an underline of the same color
+	Set _SLOW_BLINKING=[5m && Rem Make the text blink slowly, doesn't have an effect in default CMD
+	Set _FAST_BLINKING=[6m && Rem Make the text blink quickly, doesn't have an effect in default CMD
+	Set _INVERSE=[7m && Rem Swaps the colors of the foreground and the background
+	Set _HIDDEN=[8m && Rem Hides the text, doesn't have an effect in default CMD
+	Set _STRIKETHROUGH=[9m && Rem Puts a line through the text, doesn't have an effect in default CMD
 	Set _FG_BLK=[30m
 	Set _BG_BLK=[40m
 	Set _FG_RED=[31m
@@ -63,31 +71,23 @@ Setlocal
 	Set _BG_B_CYN=[106m
 	Set _FG_B_WHT=[97m
 	Set _BG_B_WHT=[107m
-	Set _FG_BG_RST=[0m
 	
 	Rem Check what action was supplied
-	If %1 == "-h" or %1 == "-H" (
-	Goto :HelpMessage
-	
-	) Else If %1 == "-tB" or %1 == "-TB" or %1 == "-Tb" (
-	Goto :BigTable
-	
-	) Else If %1 == "-tS" or %1 == "-TS" or %1 == "-Ts" (
-	Goto :SmallTables
-	
-	) Else If %1 == "-v" or %1 == "-V" (
-	Goto :Vocabulary
-	
-	) Else If %1 == "-i" or %1 == "-I" (
-	Goto :IntroMessage
-	
-	) Else (
+	If /I "%~1" == "-h" Goto :HelpMessage
+	If /I "%~1" == "-tb" Goto :BigTable
+	If /I "%~1" == "-ts" Goto :SmallTables
+	If /I "%~1" == "-v" Goto :Vocabulary
+	If /I "%~1" == "-i" Goto :IntroMessage
+	If /I "%~1" == "-f" Goto :FormatingExamples
 	Goto :BadChoiceMessage
-	
-	)
+	Exit /B
+
+
 
 :IntroMessage
 	Rem Display the about message in the terminal
+	Echo:
+	Echo:
 	Echo *****************************************************
 	Echo *                  ColoredAnsi.cmd                  *
 	Echo *****************************************************
@@ -110,8 +110,13 @@ Setlocal
 	Echo * improved/updated to by Python_Bear.               *
 	Echo *                                                   *
 	Echo *****************************************************
+	Echo:
+	Echo:
+	Exit /B
 
 :Vocabulary
+	Echo:
+	Echo:
 	Echo *****************************************
 	Echo *              Vocabulary:              *
 	Echo *****************************************
@@ -138,7 +143,22 @@ Setlocal
 	Echo *         Light         -^> l            *
 	Echo *                                       *
 	Echo *****************************************
-	
+	Echo:
+	Echo:
+	Exit /B
+
+:FormatingExamples
+	Echo Underline:     %_UNDERLINE% hello there %_FG_BG_RST%
+	Echo Italics:       %_ITALICS% hello there %_FG_BG_RST%
+	Echo Bright:        %_BRIGHT% hello there %_FG_BG_RST%
+	Echo Inverse:       %_INVERSE% hello there %_FG_BG_RST%
+	Echo Dim:           %_DIM% hello there %_FG_BG_RST%
+	Echo Slow Blinking: %_SLOW_BLINKING% hello there %_FG_BG_RST%
+	Echo Fast Blinking: %_FAST_BLINKING% hello there %_FG_BG_RST%
+	Echo Strikethrough: %_STRIKETHROUGH% hello there %_FG_BG_RST%
+	Echo Hidden:        %_HIDDEN% hello there %_FG_BG_RST%
+	Exit /B
+
 :SmallTables
 	Echo:
 	Echo:
@@ -208,7 +228,7 @@ Setlocal
 	Echo %_FG_BG_RST% 
 	Echo:
 	Echo:
-	Pause
+	Exit /B
 
 :BigTable
 	Echo:
@@ -248,18 +268,18 @@ Setlocal
 	Echo %_FG_BG_RST% 
 	Echo:
 	Echo:
-	Pause
+	Exit /B
 
 :HelpMessage
 	Echo get help
+	Exit /B
 
-:ErrorMessage
+:BadChoiceMessage
+	Echo:
+	Echo:
 	Echo ***********************************
 	Echo *  AN ERROR HAS BEEN ENCOUNTERED  *
 	Echo ***********************************
-
-:BadChoiceMessage
-	Goto :ErrorMessage
 	Echo *  The command you supplied (%1)  *
 	Echo *  is not recognised as a proper  *
 	Echo *  input for this script. In      *
@@ -270,6 +290,9 @@ Setlocal
 	Echo *  just open the file for         *
 	Echo *  editing and read through it.   *
 	Echo ***********************************
+	Echo:
+	Echo:
+	Exit /B
 
 
 Goto :SetUp
