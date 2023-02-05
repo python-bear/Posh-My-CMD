@@ -24,7 +24,7 @@
           ![A green and blue HP-UX prompt that shows the username, computer name and the path](./Images/basic-singleline_hp_ux_prompt.png)
 
 2. A Fish Shell style prompt with the username at computername and then a squiggly arrow and blue command text:  
-          > `ADD_BRIGHT_FG BOLD_GREEN_FG USER_NAME DEFAULT_FG_BG GREEN_FG ADD_ITALICS @ DEFAULT_FG_BG GREEN_FG COMPUTER_NAME SPACE ~ GREATER_THAN SPACE BLUE_FG`  
+          > `ADD_BRIGHT_FG BOLD_GREEN_FG USER_NAME DEFAULT_FORMAT GREEN_FG ADD_ITALICS @ DEFAULT_FORMAT GREEN_FG COMPUTER_NAME SPACE ~ GREATER_THAN SPACE BLUE_FG`  
           ![A green prompt that shows the username and computer name and prompts with an arrow also your command text is blue](./Images/basic-fish_prompt.png)
 
 3. A Powershell like command prompt, you should also call `COLOR 1F` or change the fg and bg colors in your CMD's properties:  
@@ -38,7 +38,7 @@
 ## With Powerline Characters And Text Formatting ##
 
 1. Displays the time (without miliseconds), then the directory path, and on the second line it has the user's name and then the user domain (computer name) and all with colors and powerline characters:  
-          > `RED_FG L_F_CIRCLE RED_BG BLACK_FG CURRENT_TIME CURSOR_LEFT:<3> YELLOW_BG RED_FG R_F_TRIANGLE YELLOW_BG BLACK_FG CURRENT_DRIVE_AND_PATH YELLOW_FG DEFAULT_BG R_F_TRIANGLE ENTER CYAN_FG L_F_CIRCLE CYAN_BG BLACK_FG USER_NAME GREEN_BG CYAN_FG R_F_CIRCLE BLACK_FG GREEN_BG @ CYAN_FG L_F_CIRCLE CYAN_BG BLACK_FG USER_DOMAIN CYAN_FG DEFAULT_BG R_F_TRIANGLE DEFAULT_FG_BG SPACE`  
+          > `RED_FG L_F_CIRCLE RED_BG BLACK_FG CURRENT_TIME CURSOR_LEFT:<3> YELLOW_BG RED_FG R_F_TRIANGLE YELLOW_BG BLACK_FG CURRENT_DRIVE_AND_PATH YELLOW_FG DEFAULT_BG R_F_TRIANGLE ENTER CYAN_FG L_F_CIRCLE CYAN_BG BLACK_FG USER_NAME GREEN_BG CYAN_FG R_F_CIRCLE BLACK_FG GREEN_BG @ CYAN_FG L_F_CIRCLE CYAN_BG BLACK_FG USER_DOMAIN CYAN_FG DEFAULT_BG R_F_TRIANGLE DEFAULT_FORMAT SPACE`  
           ![On the first line is a bubble containing the time highlited in red and the path in yellow. On the second line it prompts with a mostly blue highlighted bubble with the username and the computer name](./Images/basic-custom_prompt.png)
 
 2. A style based off of the Oh-My-Posh Microverse-Power style, you will have to call `COLOR 86` or set the fg to grey in your CMD's properties:
@@ -46,5 +46,5 @@
          ![It starts with a blue windows symbol the in a black banner are the color coded date, time, and path. On the second line it prompts with a red arrow while the command text is yellow](./Images/basic-microverse_power_prompt.png)
 
 3. A prompt based off of the Oh-My-Posh Bubblesextra theme, you will have to call `COLOR 86` or set the fg to grey in your CMD's properties:
-         > `CURSOR_FORWARD_TAB:<4> BLACK_FG L_F_CIRCLE BLACK_BG BOLD_GREEN_FG  SPACE CURRENT_DRIVE_AND_PATH DEFAULT_BG BLACK_FG R_F_CIRCLE DEFAULT_FG SPACE BLACK_FG L_F_CIRCLE BLACK_BG BOLD_BLUE_FG  SPACE CURRENT_TIME BACKSPACE BACKSPACE BACKSPACE BLACK_FG DEFAULT_BG R_F_CIRCLE DEFAULT_FG_BG SPACE SPACE ENTER BLACK_FG L_F_CIRCLE BLACK_BG BOLD_RED_FG USER_NAME SPACE ❱ BLACK_FG DEFAULT_BG R_F_CIRCLE SPACE YELLOW_FG`  
+         > `CURSOR_FORWARD_TAB:<4> BLACK_FG L_F_CIRCLE BLACK_BG BOLD_GREEN_FG  SPACE CURRENT_DRIVE_AND_PATH DEFAULT_BG BLACK_FG R_F_CIRCLE DEFAULT_FG SPACE BLACK_FG L_F_CIRCLE BLACK_BG BOLD_BLUE_FG  SPACE CURRENT_TIME BACKSPACE BACKSPACE BACKSPACE BLACK_FG DEFAULT_BG R_F_CIRCLE DEFAULT_FORMAT SPACE SPACE ENTER BLACK_FG L_F_CIRCLE BLACK_BG BOLD_RED_FG USER_NAME SPACE ❱ BLACK_FG DEFAULT_BG R_F_CIRCLE SPACE YELLOW_FG`  
          ![At the end of the first line are two black bubbles, one has the current path in green, and the other the time in blue. On the second line it prompts with your username and an arrow, which are in a black bubble but are red themselves](./Images/basic-bubblesextra_prompt.png)

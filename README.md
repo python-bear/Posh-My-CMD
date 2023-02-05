@@ -14,6 +14,8 @@ There are two versions of this application, the Basic-CMD-Poshifier.py version a
   > https://learn.microsoft.com/en-us/windows/console/console-virtual-terminal-sequences
 - A Github page on ANSI escape codes and how they work:
   > https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
+- For a long list of different ANSI control functions and what they do:
+  > https://vt100.net/docs/vt510-rm/chapter4.html
 - For the syntax and help on the CMD `prompt` command:  
   > https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc725943(v=ws.11)?redirectedfrom=MSDN
 - For the syntax and help on the CMD `color` command:  
