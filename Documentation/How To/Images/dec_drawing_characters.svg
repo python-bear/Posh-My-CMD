@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="160mm"
+   height="188mm"
+   viewBox="0 0 800 940"
+   version="1.1"
+   id="svg8">
+  <title>Special Characters and Line Drawing Character Set</title>
+<style>
+    text { font-family: Helvetica, sans-serif; font-style: normal; font-weight: normal }
+    .chname { font-size: 15px; font-weight: bold }
+    .dcname { font-size: 12px; font-weight: bold }
+    .chnums { font-size: 10px }
+    .chkey  { font-size: 18px; font-weight: bold }
+    .drawpart { font-size: 11px }
+    .colannot { font-size: 12px }
+    .scanline { stroke: black; stroke-width: 1.8; stroke-linecap: round }
+  </style>
+  <defs>
+    <marker
+       style="overflow:visible"
+       id="long-tri-in"
+       refX="0.0"
+       refY="0.0"
+       orient="auto">
+      <path
+         transform="scale(-0.4)"
+         style="fill-rule:evenodd;fill:context-fill;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 2,0 l -15,5 l 0,-10 z " />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="long-tri-out"
+       refX="0.0"
+       refY="0.0"
+       orient="auto">
+      <path
+         transform="scale(0.4)"
+         style="fill-rule:evenodd;fill:context-fill;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 2,0 l -15,5 l -0,-10 z " />
+    </marker>
+  </defs>
+  <g
+     id="layer1">
+<rect x="0" y="0" width="800" height="940" fill="none"/><rect x="10.0" y="77.5" width="30.0" height="742.5" stroke="#000" stroke-width="2" fill="none"/>
+<text class="chnums" x="25.0" y="95.0" text-anchor="middle">ROW</text>
+<line x1="10.0" y1="100.0" x2="40.0" y2="100.0" stroke="#000" stroke-width="2"/>
+<text class="chname" x="25.0" y="127.0" text-anchor="middle">0</text>
+<line x1="10.0" y1="145.0" x2="40.0" y2="145.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="172.0" text-anchor="middle">1</text>
+<line x1="10.0" y1="190.0" x2="40.0" y2="190.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="217.0" text-anchor="middle">2</text>
+<line x1="10.0" y1="235.0" x2="40.0" y2="235.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="262.0" text-anchor="middle">3</text>
+<line x1="10.0" y1="280.0" x2="40.0" y2="280.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="307.0" text-anchor="middle">4</text>
+<line x1="10.0" y1="325.0" x2="40.0" y2="325.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="352.0" text-anchor="middle">5</text>
+<line x1="10.0" y1="370.0" x2="40.0" y2="370.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="397.0" text-anchor="middle">6</text>
+<line x1="10.0" y1="415.0" x2="40.0" y2="415.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="442.0" text-anchor="middle">7</text>
+<line x1="10.0" y1="460.0" x2="40.0" y2="460.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="487.0" text-anchor="middle">8</text>
+<line x1="10.0" y1="505.0" x2="40.0" y2="505.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="532.0" text-anchor="middle">9</text>
+<line x1="10.0" y1="550.0" x2="40.0" y2="550.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="577.0" text-anchor="middle">10</text>
+<line x1="10.0" y1="595.0" x2="40.0" y2="595.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="622.0" text-anchor="middle">11</text>
+<line x1="10.0" y1="640.0" x2="40.0" y2="640.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="667.0" text-anchor="middle">12</text>
+<line x1="10.0" y1="685.0" x2="40.0" y2="685.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="712.0" text-anchor="middle">13</text>
+<line x1="10.0" y1="730.0" x2="40.0" y2="730.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="757.0" text-anchor="middle">14</text>
+<line x1="10.0" y1="775.0" x2="40.0" y2="775.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="25.0" y="802.0" text-anchor="middle">15</text>
+<rect x="40.0" y="10.0" width="70.0" height="810.0" stroke="#000" stroke-width="2" fill="none"/>
+<text class="chnums" x="75.0" y="26.0" text-anchor="middle">COLUMN</text>
+<line x1="40.0" y1="35.0" x2="110.0" y2="35.0" stroke="#000" stroke-width="2"/>
+<text class="chnums" x="49.5" y="51.0" text-anchor="middle">b8</text>
+<text class="chnums" x="66.5" y="62.0" text-anchor="middle">b7</text>
+<text class="chnums" x="83.5" y="73.0" text-anchor="middle">b6</text>
+<text class="chnums" x="100.5" y="84.0" text-anchor="middle">b5</text>
+<text class="chnums" x="50.0" y="95.0" text-anchor="middle">b4</text>
+<text class="chnums" x="66.0" y="95.0" text-anchor="middle">b3</text>
+<text class="chnums" x="82.0" y="95.0" text-anchor="middle">b2</text>
+<text class="chnums" x="98.0" y="95.0" text-anchor="middle">b1</text>
+<text class="chname" x="108.0" y="52.0" text-anchor="end">BITS</text>
+<line x1="40.0" y1="100.0" x2="110.0" y2="100.0" stroke="#000" stroke-width="2"/>
+<text class="chnums" x="50.0" y="127.0" text-anchor="middle">0</text>
+<text class="chnums" x="66.0" y="127.0" text-anchor="middle">0</text>
+<text class="chnums" x="82.0" y="127.0" text-anchor="middle">0</text>
+<text class="chnums" x="98.0" y="127.0" text-anchor="middle">0</text>
+<line x1="40.0" y1="145.0" x2="110.0" y2="145.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="172.0" text-anchor="middle">0</text>
+<text class="chnums" x="66.0" y="172.0" text-anchor="middle">0</text>
+<text class="chnums" x="82.0" y="172.0" text-anchor="middle">0</text>
+<text class="chnums" x="98.0" y="172.0" text-anchor="middle">1</text>
+<line x1="40.0" y1="190.0" x2="110.0" y2="190.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="217.0" text-anchor="middle">0</text>
+<text class="chnums" x="66.0" y="217.0" text-anchor="middle">0</text>
+<text class="chnums" x="82.0" y="217.0" text-anchor="middle">1</text>
+<text class="chnums" x="98.0" y="217.0" text-anchor="middle">0</text>
+<line x1="40.0" y1="235.0" x2="110.0" y2="235.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="262.0" text-anchor="middle">0</text>
+<text class="chnums" x="66.0" y="262.0" text-anchor="middle">0</text>
+<text class="chnums" x="82.0" y="262.0" text-anchor="middle">1</text>
+<text class="chnums" x="98.0" y="262.0" text-anchor="middle">1</text>
+<line x1="40.0" y1="280.0" x2="110.0" y2="280.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="307.0" text-anchor="middle">0</text>
+<text class="chnums" x="66.0" y="307.0" text-anchor="middle">1</text>
+<text class="chnums" x="82.0" y="307.0" text-anchor="middle">0</text>
+<text class="chnums" x="98.0" y="307.0" text-anchor="middle">0</text>
+<line x1="40.0" y1="325.0" x2="110.0" y2="325.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="352.0" text-anchor="middle">0</text>
+<text class="chnums" x="66.0" y="352.0" text-anchor="middle">1</text>
+<text class="chnums" x="82.0" y="352.0" text-anchor="middle">0</text>
+<text class="chnums" x="98.0" y="352.0" text-anchor="middle">1</text>
+<line x1="40.0" y1="370.0" x2="110.0" y2="370.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="397.0" text-anchor="middle">0</text>
+<text class="chnums" x="66.0" y="397.0" text-anchor="middle">1</text>
+<text class="chnums" x="82.0" y="397.0" text-anchor="middle">1</text>
+<text class="chnums" x="98.0" y="397.0" text-anchor="middle">0</text>
+<line x1="40.0" y1="415.0" x2="110.0" y2="415.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="442.0" text-anchor="middle">0</text>
+<text class="chnums" x="66.0" y="442.0" text-anchor="middle">1</text>
+<text class="chnums" x="82.0" y="442.0" text-anchor="middle">1</text>
+<text class="chnums" x="98.0" y="442.0" text-anchor="middle">1</text>
+<line x1="40.0" y1="460.0" x2="110.0" y2="460.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="487.0" text-anchor="middle">1</text>
+<text class="chnums" x="66.0" y="487.0" text-anchor="middle">0</text>
+<text class="chnums" x="82.0" y="487.0" text-anchor="middle">0</text>
+<text class="chnums" x="98.0" y="487.0" text-anchor="middle">0</text>
+<line x1="40.0" y1="505.0" x2="110.0" y2="505.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="532.0" text-anchor="middle">1</text>
+<text class="chnums" x="66.0" y="532.0" text-anchor="middle">0</text>
+<text class="chnums" x="82.0" y="532.0" text-anchor="middle">0</text>
+<text class="chnums" x="98.0" y="532.0" text-anchor="middle">1</text>
+<line x1="40.0" y1="550.0" x2="110.0" y2="550.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="577.0" text-anchor="middle">1</text>
+<text class="chnums" x="66.0" y="577.0" text-anchor="middle">0</text>
+<text class="chnums" x="82.0" y="577.0" text-anchor="middle">1</text>
+<text class="chnums" x="98.0" y="577.0" text-anchor="middle">0</text>
+<line x1="40.0" y1="595.0" x2="110.0" y2="595.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="622.0" text-anchor="middle">1</text>
+<text class="chnums" x="66.0" y="622.0" text-anchor="middle">0</text>
+<text class="chnums" x="82.0" y="622.0" text-anchor="middle">1</text>
+<text class="chnums" x="98.0" y="622.0" text-anchor="middle">1</text>
+<line x1="40.0" y1="640.0" x2="110.0" y2="640.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="667.0" text-anchor="middle">1</text>
+<text class="chnums" x="66.0" y="667.0" text-anchor="middle">1</text>
+<text class="chnums" x="82.0" y="667.0" text-anchor="middle">0</text>
+<text class="chnums" x="98.0" y="667.0" text-anchor="middle">0</text>
+<line x1="40.0" y1="685.0" x2="110.0" y2="685.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="712.0" text-anchor="middle">1</text>
+<text class="chnums" x="66.0" y="712.0" text-anchor="middle">1</text>
+<text class="chnums" x="82.0" y="712.0" text-anchor="middle">0</text>
+<text class="chnums" x="98.0" y="712.0" text-anchor="middle">1</text>
+<line x1="40.0" y1="730.0" x2="110.0" y2="730.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="757.0" text-anchor="middle">1</text>
+<text class="chnums" x="66.0" y="757.0" text-anchor="middle">1</text>
+<text class="chnums" x="82.0" y="757.0" text-anchor="middle">1</text>
+<text class="chnums" x="98.0" y="757.0" text-anchor="middle">0</text>
+<line x1="40.0" y1="775.0" x2="110.0" y2="775.0" stroke="#000" stroke-width="1"/>
+<text class="chnums" x="50.0" y="802.0" text-anchor="middle">1</text>
+<text class="chnums" x="66.0" y="802.0" text-anchor="middle">1</text>
+<text class="chnums" x="82.0" y="802.0" text-anchor="middle">1</text>
+<text class="chnums" x="98.0" y="802.0" text-anchor="middle">1</text>
+<text class="chnums" x="222.5" y="178.0" text-anchor="middle">(XON)</text>
+<text class="chnums" x="222.5" y="268.0" text-anchor="middle">(XOFF)</text>
+<line x1="110.0" y1="834.5" x2="110.0" y2="850.5" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="842.5" x2="161.0" y2="842.5" fill="#000" stroke="#000" stroke-width="1" marker-start="url(#long-tri-in)"/>
+<line x1="229.0" y1="842.5" x2="280.0" y2="842.5" fill="#000" stroke="#000" stroke-width="1" marker-end="url(#long-tri-out)"/>
+<line x1="280.0" y1="834.5" x2="280.0" y2="850.5" stroke="#000" stroke-width="1"/>
+<text class="colannot" x="195.0" y="846.1" text-anchor="middle">C0 CODES</text>
+<line x1="280.0" y1="834.5" x2="280.0" y2="850.5" stroke="#000" stroke-width="1"/>
+<line x1="280.0" y1="842.5" x2="458.5" y2="842.5" fill="#000" stroke="#000" stroke-width="1" marker-start="url(#long-tri-in)"/>
+<line x1="611.5" y1="842.5" x2="790.0" y2="842.5" fill="#000" stroke="#000" stroke-width="1" marker-end="url(#long-tri-out)"/>
+<line x1="790.0" y1="834.5" x2="790.0" y2="850.5" stroke="#000" stroke-width="1"/>
+<text class="colannot" x="535.0" y="839.6" text-anchor="middle">GL CODES</text>
+<text class="colannot" x="535.0" y="852.6" text-anchor="middle">(DEC SPECIAL GRAPHIC)</text>
+<text class="chname" x="137.5" y="127.0" text-anchor="middle">NUL</text>
+<text class="chnums" x="188.0" y="115.0" text-anchor="end"><tspan>0</tspan><tspan x="188.0" dy="12">0</tspan><tspan x="188.0" dy="12">0</tspan></text>
+<text class="chname" x="137.5" y="172.0" text-anchor="middle">SOH</text>
+<text class="chnums" x="188.0" y="160.0" text-anchor="end"><tspan>1</tspan><tspan x="188.0" dy="12">1</tspan><tspan x="188.0" dy="12">1</tspan></text>
+<text class="chname" x="137.5" y="217.0" text-anchor="middle">STX</text>
+<text class="chnums" x="188.0" y="205.0" text-anchor="end"><tspan>2</tspan><tspan x="188.0" dy="12">2</tspan><tspan x="188.0" dy="12">2</tspan></text>
+<text class="chname" x="137.5" y="262.0" text-anchor="middle">ETX</text>
+<text class="chnums" x="188.0" y="250.0" text-anchor="end"><tspan>3</tspan><tspan x="188.0" dy="12">3</tspan><tspan x="188.0" dy="12">3</tspan></text>
+<text class="chname" x="137.5" y="307.0" text-anchor="middle">EOT</text>
+<text class="chnums" x="188.0" y="295.0" text-anchor="end"><tspan>4</tspan><tspan x="188.0" dy="12">4</tspan><tspan x="188.0" dy="12">4</tspan></text>
+<text class="chname" x="137.5" y="352.0" text-anchor="middle">ENQ</text>
+<text class="chnums" x="188.0" y="340.0" text-anchor="end"><tspan>5</tspan><tspan x="188.0" dy="12">5</tspan><tspan x="188.0" dy="12">5</tspan></text>
+<text class="chname" x="137.5" y="397.0" text-anchor="middle">ACK</text>
+<text class="chnums" x="188.0" y="385.0" text-anchor="end"><tspan>6</tspan><tspan x="188.0" dy="12">6</tspan><tspan x="188.0" dy="12">6</tspan></text>
+<text class="chname" x="137.5" y="442.0" text-anchor="middle">BEL</text>
+<text class="chnums" x="188.0" y="430.0" text-anchor="end"><tspan>7</tspan><tspan x="188.0" dy="12">7</tspan><tspan x="188.0" dy="12">7</tspan></text>
+<text class="chname" x="137.5" y="487.0" text-anchor="middle">BS</text>
+<text class="chnums" x="188.0" y="475.0" text-anchor="end"><tspan>10</tspan><tspan x="188.0" dy="12">8</tspan><tspan x="188.0" dy="12">8</tspan></text>
+<text class="chname" x="137.5" y="532.0" text-anchor="middle">HT</text>
+<text class="chnums" x="188.0" y="520.0" text-anchor="end"><tspan>11</tspan><tspan x="188.0" dy="12">9</tspan><tspan x="188.0" dy="12">9</tspan></text>
+<text class="chname" x="137.5" y="577.0" text-anchor="middle">LF</text>
+<text class="chnums" x="188.0" y="565.0" text-anchor="end"><tspan>12</tspan><tspan x="188.0" dy="12">10</tspan><tspan x="188.0" dy="12">A</tspan></text>
+<text class="chname" x="137.5" y="622.0" text-anchor="middle">VT</text>
+<text class="chnums" x="188.0" y="610.0" text-anchor="end"><tspan>13</tspan><tspan x="188.0" dy="12">11</tspan><tspan x="188.0" dy="12">B</tspan></text>
+<text class="chname" x="137.5" y="667.0" text-anchor="middle">FF</text>
+<text class="chnums" x="188.0" y="655.0" text-anchor="end"><tspan>14</tspan><tspan x="188.0" dy="12">12</tspan><tspan x="188.0" dy="12">C</tspan></text>
+<text class="chname" x="137.5" y="712.0" text-anchor="middle">CR</text>
+<text class="chnums" x="188.0" y="700.0" text-anchor="end"><tspan>15</tspan><tspan x="188.0" dy="12">13</tspan><tspan x="188.0" dy="12">D</tspan></text>
+<text class="chname" x="137.5" y="757.0" text-anchor="middle">SO</text>
+<text class="chnums" x="188.0" y="745.0" text-anchor="end"><tspan>16</tspan><tspan x="188.0" dy="12">14</tspan><tspan x="188.0" dy="12">E</tspan></text>
+<text class="chname" x="137.5" y="802.0" text-anchor="middle">SI</text>
+<text class="chnums" x="188.0" y="790.0" text-anchor="end"><tspan>17</tspan><tspan x="188.0" dy="12">15</tspan><tspan x="188.0" dy="12">F</tspan></text>
+<text class="chname" x="222.5" y="127.0" text-anchor="middle">DLE</text>
+<text class="chnums" x="273.0" y="115.0" text-anchor="end"><tspan>20</tspan><tspan x="273.0" dy="12">16</tspan><tspan x="273.0" dy="12">10</tspan></text>
+<text class="chname" x="222.5" y="167.0" text-anchor="middle">DC1</text>
+<text class="chnums" x="273.0" y="160.0" text-anchor="end"><tspan>21</tspan><tspan x="273.0" dy="12">17</tspan><tspan x="273.0" dy="12">11</tspan></text>
+<text class="chname" x="222.5" y="217.0" text-anchor="middle">DC2</text>
+<text class="chnums" x="273.0" y="205.0" text-anchor="end"><tspan>22</tspan><tspan x="273.0" dy="12">18</tspan><tspan x="273.0" dy="12">12</tspan></text>
+<text class="chname" x="222.5" y="257.0" text-anchor="middle">DC3</text>
+<text class="chnums" x="273.0" y="250.0" text-anchor="end"><tspan>23</tspan><tspan x="273.0" dy="12">19</tspan><tspan x="273.0" dy="12">13</tspan></text>
+<text class="chname" x="222.5" y="307.0" text-anchor="middle">DC4</text>
+<text class="chnums" x="273.0" y="295.0" text-anchor="end"><tspan>24</tspan><tspan x="273.0" dy="12">20</tspan><tspan x="273.0" dy="12">14</tspan></text>
+<text class="chname" x="222.5" y="352.0" text-anchor="middle">NAK</text>
+<text class="chnums" x="273.0" y="340.0" text-anchor="end"><tspan>25</tspan><tspan x="273.0" dy="12">21</tspan><tspan x="273.0" dy="12">15</tspan></text>
+<text class="chname" x="222.5" y="397.0" text-anchor="middle">SYN</text>
+<text class="chnums" x="273.0" y="385.0" text-anchor="end"><tspan>26</tspan><tspan x="273.0" dy="12">22</tspan><tspan x="273.0" dy="12">16</tspan></text>
+<text class="chname" x="222.5" y="442.0" text-anchor="middle">ETB</text>
+<text class="chnums" x="273.0" y="430.0" text-anchor="end"><tspan>27</tspan><tspan x="273.0" dy="12">23</tspan><tspan x="273.0" dy="12">17</tspan></text>
+<text class="chname" x="222.5" y="487.0" text-anchor="middle">CAN</text>
+<text class="chnums" x="273.0" y="475.0" text-anchor="end"><tspan>30</tspan><tspan x="273.0" dy="12">24</tspan><tspan x="273.0" dy="12">18</tspan></text>
+<text class="chname" x="222.5" y="532.0" text-anchor="middle">EM</text>
+<text class="chnums" x="273.0" y="520.0" text-anchor="end"><tspan>31</tspan><tspan x="273.0" dy="12">25</tspan><tspan x="273.0" dy="12">19</tspan></text>
+<text class="chname" x="222.5" y="577.0" text-anchor="middle">SUB</text>
+<text class="chnums" x="273.0" y="565.0" text-anchor="end"><tspan>32</tspan><tspan x="273.0" dy="12">26</tspan><tspan x="273.0" dy="12">1A</tspan></text>
+<text class="chname" x="222.5" y="622.0" text-anchor="middle">ESC</text>
+<text class="chnums" x="273.0" y="610.0" text-anchor="end"><tspan>33</tspan><tspan x="273.0" dy="12">27</tspan><tspan x="273.0" dy="12">1B</tspan></text>
+<text class="chname" x="222.5" y="667.0" text-anchor="middle">FS</text>
+<text class="chnums" x="273.0" y="655.0" text-anchor="end"><tspan>34</tspan><tspan x="273.0" dy="12">28</tspan><tspan x="273.0" dy="12">1C</tspan></text>
+<text class="chname" x="222.5" y="712.0" text-anchor="middle">GS</text>
+<text class="chnums" x="273.0" y="700.0" text-anchor="end"><tspan>35</tspan><tspan x="273.0" dy="12">29</tspan><tspan x="273.0" dy="12">1D</tspan></text>
+<text class="chname" x="222.5" y="757.0" text-anchor="middle">RS</text>
+<text class="chnums" x="273.0" y="745.0" text-anchor="end"><tspan>36</tspan><tspan x="273.0" dy="12">30</tspan><tspan x="273.0" dy="12">1E</tspan></text>
+<text class="chname" x="222.5" y="802.0" text-anchor="middle">US</text>
+<text class="chnums" x="273.0" y="790.0" text-anchor="end"><tspan>37</tspan><tspan x="273.0" dy="12">31</tspan><tspan x="273.0" dy="12">1F</tspan></text>
+<text class="chname" x="307.5" y="127.0" text-anchor="middle">SP</text>
+<text class="chnums" x="358.0" y="115.0" text-anchor="end"><tspan>40</tspan><tspan x="358.0" dy="12">32</tspan><tspan x="358.0" dy="12">20</tspan></text>
+<text class="chname" x="307.5" y="172.0" text-anchor="middle">!</text>
+<text class="chnums" x="358.0" y="160.0" text-anchor="end"><tspan>41</tspan><tspan x="358.0" dy="12">33</tspan><tspan x="358.0" dy="12">21</tspan></text>
+<text class="chname" x="307.5" y="217.0" text-anchor="middle">&quot;</text>
+<text class="chnums" x="358.0" y="205.0" text-anchor="end"><tspan>42</tspan><tspan x="358.0" dy="12">34</tspan><tspan x="358.0" dy="12">22</tspan></text>
+<text class="chname" x="307.5" y="262.0" text-anchor="middle">#</text>
+<text class="chnums" x="358.0" y="250.0" text-anchor="end"><tspan>43</tspan><tspan x="358.0" dy="12">35</tspan><tspan x="358.0" dy="12">23</tspan></text>
+<text class="chname" x="307.5" y="307.0" text-anchor="middle">$</text>
+<text class="chnums" x="358.0" y="295.0" text-anchor="end"><tspan>44</tspan><tspan x="358.0" dy="12">36</tspan><tspan x="358.0" dy="12">24</tspan></text>
+<text class="chname" x="307.5" y="352.0" text-anchor="middle">%</text>
+<text class="chnums" x="358.0" y="340.0" text-anchor="end"><tspan>45</tspan><tspan x="358.0" dy="12">37</tspan><tspan x="358.0" dy="12">25</tspan></text>
+<text class="chname" x="307.5" y="397.0" text-anchor="middle">&amp;</text>
+<text class="chnums" x="358.0" y="385.0" text-anchor="end"><tspan>46</tspan><tspan x="358.0" dy="12">38</tspan><tspan x="358.0" dy="12">26</tspan></text>
+<text class="chname" x="307.5" y="442.0" text-anchor="middle">'</text>
+<text class="chnums" x="358.0" y="430.0" text-anchor="end"><tspan>47</tspan><tspan x="358.0" dy="12">39</tspan><tspan x="358.0" dy="12">27</tspan></text>
+<text class="chname" x="307.5" y="487.0" text-anchor="middle">(</text>
+<text class="chnums" x="358.0" y="475.0" text-anchor="end"><tspan>50</tspan><tspan x="358.0" dy="12">40</tspan><tspan x="358.0" dy="12">28</tspan></text>
+<text class="chname" x="307.5" y="532.0" text-anchor="middle">)</text>
+<text class="chnums" x="358.0" y="520.0" text-anchor="end"><tspan>51</tspan><tspan x="358.0" dy="12">41</tspan><tspan x="358.0" dy="12">29</tspan></text>
+<text class="chname" x="307.5" y="577.0" text-anchor="middle">*</text>
+<text class="chnums" x="358.0" y="565.0" text-anchor="end"><tspan>52</tspan><tspan x="358.0" dy="12">42</tspan><tspan x="358.0" dy="12">2A</tspan></text>
+<text class="chname" x="307.5" y="622.0" text-anchor="middle">+</text>
+<text class="chnums" x="358.0" y="610.0" text-anchor="end"><tspan>53</tspan><tspan x="358.0" dy="12">43</tspan><tspan x="358.0" dy="12">2B</tspan></text>
+<text class="chname" x="307.5" y="667.0" text-anchor="middle">,</text>
+<text class="chnums" x="358.0" y="655.0" text-anchor="end"><tspan>54</tspan><tspan x="358.0" dy="12">44</tspan><tspan x="358.0" dy="12">2C</tspan></text>
+<text class="chname" x="307.5" y="712.0" text-anchor="middle">-</text>
+<text class="chnums" x="358.0" y="700.0" text-anchor="end"><tspan>55</tspan><tspan x="358.0" dy="12">45</tspan><tspan x="358.0" dy="12">2D</tspan></text>
+<text class="chname" x="307.5" y="757.0" text-anchor="middle">.</text>
+<text class="chnums" x="358.0" y="745.0" text-anchor="end"><tspan>56</tspan><tspan x="358.0" dy="12">46</tspan><tspan x="358.0" dy="12">2E</tspan></text>
+<text class="chname" x="307.5" y="802.0" text-anchor="middle">/</text>
+<text class="chnums" x="358.0" y="790.0" text-anchor="end"><tspan>57</tspan><tspan x="358.0" dy="12">47</tspan><tspan x="358.0" dy="12">2F</tspan></text>
+<text class="chname" x="392.5" y="127.0" text-anchor="middle">0</text>
+<text class="chnums" x="443.0" y="115.0" text-anchor="end"><tspan>60</tspan><tspan x="443.0" dy="12">48</tspan><tspan x="443.0" dy="12">30</tspan></text>
+<text class="chname" x="392.5" y="172.0" text-anchor="middle">1</text>
+<text class="chnums" x="443.0" y="160.0" text-anchor="end"><tspan>61</tspan><tspan x="443.0" dy="12">49</tspan><tspan x="443.0" dy="12">31</tspan></text>
+<text class="chname" x="392.5" y="217.0" text-anchor="middle">2</text>
+<text class="chnums" x="443.0" y="205.0" text-anchor="end"><tspan>62</tspan><tspan x="443.0" dy="12">50</tspan><tspan x="443.0" dy="12">32</tspan></text>
+<text class="chname" x="392.5" y="262.0" text-anchor="middle">3</text>
+<text class="chnums" x="443.0" y="250.0" text-anchor="end"><tspan>63</tspan><tspan x="443.0" dy="12">51</tspan><tspan x="443.0" dy="12">33</tspan></text>
+<text class="chname" x="392.5" y="307.0" text-anchor="middle">4</text>
+<text class="chnums" x="443.0" y="295.0" text-anchor="end"><tspan>64</tspan><tspan x="443.0" dy="12">52</tspan><tspan x="443.0" dy="12">34</tspan></text>
+<text class="chname" x="392.5" y="352.0" text-anchor="middle">5</text>
+<text class="chnums" x="443.0" y="340.0" text-anchor="end"><tspan>65</tspan><tspan x="443.0" dy="12">53</tspan><tspan x="443.0" dy="12">35</tspan></text>
+<text class="chname" x="392.5" y="397.0" text-anchor="middle">6</text>
+<text class="chnums" x="443.0" y="385.0" text-anchor="end"><tspan>66</tspan><tspan x="443.0" dy="12">54</tspan><tspan x="443.0" dy="12">36</tspan></text>
+<text class="chname" x="392.5" y="442.0" text-anchor="middle">7</text>
+<text class="chnums" x="443.0" y="430.0" text-anchor="end"><tspan>67</tspan><tspan x="443.0" dy="12">55</tspan><tspan x="443.0" dy="12">37</tspan></text>
+<text class="chname" x="392.5" y="487.0" text-anchor="middle">8</text>
+<text class="chnums" x="443.0" y="475.0" text-anchor="end"><tspan>70</tspan><tspan x="443.0" dy="12">56</tspan><tspan x="443.0" dy="12">38</tspan></text>
+<text class="chname" x="392.5" y="532.0" text-anchor="middle">9</text>
+<text class="chnums" x="443.0" y="520.0" text-anchor="end"><tspan>71</tspan><tspan x="443.0" dy="12">57</tspan><tspan x="443.0" dy="12">39</tspan></text>
+<text class="chname" x="392.5" y="577.0" text-anchor="middle">:</text>
+<text class="chnums" x="443.0" y="565.0" text-anchor="end"><tspan>72</tspan><tspan x="443.0" dy="12">58</tspan><tspan x="443.0" dy="12">3A</tspan></text>
+<text class="chname" x="392.5" y="622.0" text-anchor="middle">;</text>
+<text class="chnums" x="443.0" y="610.0" text-anchor="end"><tspan>73</tspan><tspan x="443.0" dy="12">59</tspan><tspan x="443.0" dy="12">3B</tspan></text>
+<text class="chname" x="392.5" y="667.0" text-anchor="middle">&lt;</text>
+<text class="chnums" x="443.0" y="655.0" text-anchor="end"><tspan>74</tspan><tspan x="443.0" dy="12">60</tspan><tspan x="443.0" dy="12">3C</tspan></text>
+<text class="chname" x="392.5" y="712.0" text-anchor="middle">=</text>
+<text class="chnums" x="443.0" y="700.0" text-anchor="end"><tspan>75</tspan><tspan x="443.0" dy="12">61</tspan><tspan x="443.0" dy="12">3D</tspan></text>
+<text class="chname" x="392.5" y="757.0" text-anchor="middle">&gt;</text>
+<text class="chnums" x="443.0" y="745.0" text-anchor="end"><tspan>76</tspan><tspan x="443.0" dy="12">62</tspan><tspan x="443.0" dy="12">3E</tspan></text>
+<text class="chname" x="392.5" y="802.0" text-anchor="middle">?</text>
+<text class="chnums" x="443.0" y="790.0" text-anchor="end"><tspan>77</tspan><tspan x="443.0" dy="12">63</tspan><tspan x="443.0" dy="12">3F</tspan></text>
+<text class="chname" x="477.5" y="127.0" text-anchor="middle">@</text>
+<text class="chnums" x="528.0" y="115.0" text-anchor="end"><tspan>100</tspan><tspan x="528.0" dy="12">64</tspan><tspan x="528.0" dy="12">40</tspan></text>
+<text class="chname" x="477.5" y="172.0" text-anchor="middle">A</text>
+<text class="chnums" x="528.0" y="160.0" text-anchor="end"><tspan>101</tspan><tspan x="528.0" dy="12">65</tspan><tspan x="528.0" dy="12">41</tspan></text>
+<text class="chname" x="477.5" y="217.0" text-anchor="middle">B</text>
+<text class="chnums" x="528.0" y="205.0" text-anchor="end"><tspan>102</tspan><tspan x="528.0" dy="12">66</tspan><tspan x="528.0" dy="12">42</tspan></text>
+<text class="chname" x="477.5" y="262.0" text-anchor="middle">C</text>
+<text class="chnums" x="528.0" y="250.0" text-anchor="end"><tspan>103</tspan><tspan x="528.0" dy="12">67</tspan><tspan x="528.0" dy="12">43</tspan></text>
+<text class="chname" x="477.5" y="307.0" text-anchor="middle">D</text>
+<text class="chnums" x="528.0" y="295.0" text-anchor="end"><tspan>104</tspan><tspan x="528.0" dy="12">68</tspan><tspan x="528.0" dy="12">44</tspan></text>
+<text class="chname" x="477.5" y="352.0" text-anchor="middle">E</text>
+<text class="chnums" x="528.0" y="340.0" text-anchor="end"><tspan>105</tspan><tspan x="528.0" dy="12">69</tspan><tspan x="528.0" dy="12">45</tspan></text>
+<text class="chname" x="477.5" y="397.0" text-anchor="middle">F</text>
+<text class="chnums" x="528.0" y="385.0" text-anchor="end"><tspan>106</tspan><tspan x="528.0" dy="12">70</tspan><tspan x="528.0" dy="12">46</tspan></text>
+<text class="chname" x="477.5" y="442.0" text-anchor="middle">G</text>
+<text class="chnums" x="528.0" y="430.0" text-anchor="end"><tspan>107</tspan><tspan x="528.0" dy="12">71</tspan><tspan x="528.0" dy="12">47</tspan></text>
+<text class="chname" x="477.5" y="487.0" text-anchor="middle">H</text>
+<text class="chnums" x="528.0" y="475.0" text-anchor="end"><tspan>110</tspan><tspan x="528.0" dy="12">72</tspan><tspan x="528.0" dy="12">48</tspan></text>
+<text class="chname" x="477.5" y="532.0" text-anchor="middle">I</text>
+<text class="chnums" x="528.0" y="520.0" text-anchor="end"><tspan>111</tspan><tspan x="528.0" dy="12">73</tspan><tspan x="528.0" dy="12">49</tspan></text>
+<text class="chname" x="477.5" y="577.0" text-anchor="middle">J</text>
+<text class="chnums" x="528.0" y="565.0" text-anchor="end"><tspan>112</tspan><tspan x="528.0" dy="12">74</tspan><tspan x="528.0" dy="12">4A</tspan></text>
+<text class="chname" x="477.5" y="622.0" text-anchor="middle">K</text>
+<text class="chnums" x="528.0" y="610.0" text-anchor="end"><tspan>113</tspan><tspan x="528.0" dy="12">75</tspan><tspan x="528.0" dy="12">4B</tspan></text>
+<text class="chname" x="477.5" y="667.0" text-anchor="middle">L</text>
+<text class="chnums" x="528.0" y="655.0" text-anchor="end"><tspan>114</tspan><tspan x="528.0" dy="12">76</tspan><tspan x="528.0" dy="12">4C</tspan></text>
+<text class="chname" x="477.5" y="712.0" text-anchor="middle">M</text>
+<text class="chnums" x="528.0" y="700.0" text-anchor="end"><tspan>115</tspan><tspan x="528.0" dy="12">77</tspan><tspan x="528.0" dy="12">4D</tspan></text>
+<text class="chname" x="477.5" y="757.0" text-anchor="middle">N</text>
+<text class="chnums" x="528.0" y="745.0" text-anchor="end"><tspan>116</tspan><tspan x="528.0" dy="12">78</tspan><tspan x="528.0" dy="12">4E</tspan></text>
+<text class="chname" x="477.5" y="802.0" text-anchor="middle">O</text>
+<text class="chnums" x="528.0" y="790.0" text-anchor="end"><tspan>117</tspan><tspan x="528.0" dy="12">79</tspan><tspan x="528.0" dy="12">4F</tspan></text>
+<text class="chname" x="562.5" y="127.0" text-anchor="middle">P</text>
+<text class="chnums" x="613.0" y="115.0" text-anchor="end"><tspan>120</tspan><tspan x="613.0" dy="12">80</tspan><tspan x="613.0" dy="12">50</tspan></text>
+<text class="chname" x="562.5" y="172.0" text-anchor="middle">Q</text>
+<text class="chnums" x="613.0" y="160.0" text-anchor="end"><tspan>121</tspan><tspan x="613.0" dy="12">81</tspan><tspan x="613.0" dy="12">51</tspan></text>
+<text class="chname" x="562.5" y="217.0" text-anchor="middle">R</text>
+<text class="chnums" x="613.0" y="205.0" text-anchor="end"><tspan>122</tspan><tspan x="613.0" dy="12">82</tspan><tspan x="613.0" dy="12">52</tspan></text>
+<text class="chname" x="562.5" y="262.0" text-anchor="middle">S</text>
+<text class="chnums" x="613.0" y="250.0" text-anchor="end"><tspan>123</tspan><tspan x="613.0" dy="12">83</tspan><tspan x="613.0" dy="12">53</tspan></text>
+<text class="chname" x="562.5" y="307.0" text-anchor="middle">T</text>
+<text class="chnums" x="613.0" y="295.0" text-anchor="end"><tspan>124</tspan><tspan x="613.0" dy="12">84</tspan><tspan x="613.0" dy="12">54</tspan></text>
+<text class="chname" x="562.5" y="352.0" text-anchor="middle">U</text>
+<text class="chnums" x="613.0" y="340.0" text-anchor="end"><tspan>125</tspan><tspan x="613.0" dy="12">85</tspan><tspan x="613.0" dy="12">55</tspan></text>
+<text class="chname" x="562.5" y="397.0" text-anchor="middle">V</text>
+<text class="chnums" x="613.0" y="385.0" text-anchor="end"><tspan>126</tspan><tspan x="613.0" dy="12">86</tspan><tspan x="613.0" dy="12">56</tspan></text>
+<text class="chname" x="562.5" y="442.0" text-anchor="middle">W</text>
+<text class="chnums" x="613.0" y="430.0" text-anchor="end"><tspan>127</tspan><tspan x="613.0" dy="12">87</tspan><tspan x="613.0" dy="12">57</tspan></text>
+<text class="chname" x="562.5" y="487.0" text-anchor="middle">X</text>
+<text class="chnums" x="613.0" y="475.0" text-anchor="end"><tspan>130</tspan><tspan x="613.0" dy="12">88</tspan><tspan x="613.0" dy="12">58</tspan></text>
+<text class="chname" x="562.5" y="532.0" text-anchor="middle">Y</text>
+<text class="chnums" x="613.0" y="520.0" text-anchor="end"><tspan>131</tspan><tspan x="613.0" dy="12">89</tspan><tspan x="613.0" dy="12">59</tspan></text>
+<text class="chname" x="562.5" y="577.0" text-anchor="middle">Z</text>
+<text class="chnums" x="613.0" y="565.0" text-anchor="end"><tspan>132</tspan><tspan x="613.0" dy="12">90</tspan><tspan x="613.0" dy="12">5A</tspan></text>
+<text class="chname" x="562.5" y="622.0" text-anchor="middle">[</text>
+<text class="chnums" x="613.0" y="610.0" text-anchor="end"><tspan>133</tspan><tspan x="613.0" dy="12">91</tspan><tspan x="613.0" dy="12">5B</tspan></text>
+<text class="chname" x="562.5" y="667.0" text-anchor="middle">\</text>
+<text class="chnums" x="613.0" y="655.0" text-anchor="end"><tspan>134</tspan><tspan x="613.0" dy="12">92</tspan><tspan x="613.0" dy="12">5C</tspan></text>
+<text class="chname" x="562.5" y="712.0" text-anchor="middle">]</text>
+<text class="chnums" x="613.0" y="700.0" text-anchor="end"><tspan>135</tspan><tspan x="613.0" dy="12">93</tspan><tspan x="613.0" dy="12">5D</tspan></text>
+<text class="chname" x="562.5" y="757.0" text-anchor="middle">^</text>
+<text class="chnums" x="613.0" y="745.0" text-anchor="end"><tspan>136</tspan><tspan x="613.0" dy="12">94</tspan><tspan x="613.0" dy="12">5E</tspan></text>
+<text class="chname" x="562.5" y="802.0" text-anchor="middle"></text>
+<text class="chnums" x="613.0" y="790.0" text-anchor="end"><tspan>137</tspan><tspan x="613.0" dy="12">95</tspan><tspan x="613.0" dy="12">5F</tspan></text>
+<text class="chname" x="647.5" y="127.0" text-anchor="middle"></text>
+<text class="chnums" x="698.0" y="115.0" text-anchor="end"><tspan>140</tspan><tspan x="698.0" dy="12">96</tspan><tspan x="698.0" dy="12">60</tspan></text>
+<text class="chname" x="647.5" y="172.0" text-anchor="middle"></text>
+<text class="chnums" x="698.0" y="160.0" text-anchor="end"><tspan>141</tspan><tspan x="698.0" dy="12">97</tspan><tspan x="698.0" dy="12">61</tspan></text>
+<text class="chname" x="647.5" y="217.0" text-anchor="middle"></text>
+<text class="chnums" x="698.0" y="205.0" text-anchor="end"><tspan>142</tspan><tspan x="698.0" dy="12">98</tspan><tspan x="698.0" dy="12">62</tspan></text>
+<text class="chname" x="647.5" y="262.0" text-anchor="middle"></text>
+<text class="chnums" x="698.0" y="250.0" text-anchor="end"><tspan>143</tspan><tspan x="698.0" dy="12">99</tspan><tspan x="698.0" dy="12">63</tspan></text>
+<text class="chname" x="647.5" y="307.0" text-anchor="middle"></text>
+<text class="chnums" x="698.0" y="295.0" text-anchor="end"><tspan>144</tspan><tspan x="698.0" dy="12">100</tspan><tspan x="698.0" dy="12">64</tspan></text>
+<text class="chname" x="647.5" y="352.0" text-anchor="middle"></text>
+<text class="chnums" x="698.0" y="340.0" text-anchor="end"><tspan>145</tspan><tspan x="698.0" dy="12">101</tspan><tspan x="698.0" dy="12">65</tspan></text>
+<text class="chname" x="647.5" y="397.0" text-anchor="middle"></text>
+<text class="chnums" x="698.0" y="385.0" text-anchor="end"><tspan>146</tspan><tspan x="698.0" dy="12">102</tspan><tspan x="698.0" dy="12">66</tspan></text>
+<text class="chname" x="647.5" y="442.0" text-anchor="middle"></text>
+<text class="chnums" x="698.0" y="430.0" text-anchor="end"><tspan>147</tspan><tspan x="698.0" dy="12">103</tspan><tspan x="698.0" dy="12">67</tspan></text>
+<text class="chname" x="647.5" y="487.0" text-anchor="middle"></text>
+<text class="chnums" x="698.0" y="475.0" text-anchor="end"><tspan>150</tspan><tspan x="698.0" dy="12">104</tspan><tspan x="698.0" dy="12">68</tspan></text>
+<text class="chname" x="647.5" y="532.0" text-anchor="middle"></text>
+<text class="chnums" x="698.0" y="520.0" text-anchor="end"><tspan>151</tspan><tspan x="698.0" dy="12">105</tspan><tspan x="698.0" dy="12">69</tspan></text>
+<text class="chname" x="647.5" y="577.0" text-anchor="middle"></text>
+<text class="chnums" x="698.0" y="565.0" text-anchor="end"><tspan>152</tspan><tspan x="698.0" dy="12">106</tspan><tspan x="698.0" dy="12">6A</tspan></text>
+<text class="chname" x="647.5" y="622.0" text-anchor="middle"></text>
+<text class="chnums" x="698.0" y="610.0" text-anchor="end"><tspan>153</tspan><tspan x="698.0" dy="12">107</tspan><tspan x="698.0" dy="12">6B</tspan></text>
+<text class="chname" x="647.5" y="667.0" text-anchor="middle"></text>
+<text class="chnums" x="698.0" y="655.0" text-anchor="end"><tspan>154</tspan><tspan x="698.0" dy="12">108</tspan><tspan x="698.0" dy="12">6C</tspan></text>
+<text class="chname" x="647.5" y="712.0" text-anchor="middle"></text>
+<text class="chnums" x="698.0" y="700.0" text-anchor="end"><tspan>155</tspan><tspan x="698.0" dy="12">109</tspan><tspan x="698.0" dy="12">6D</tspan></text>
+<text class="chname" x="647.5" y="757.0" text-anchor="middle"></text>
+<text class="chnums" x="698.0" y="745.0" text-anchor="end"><tspan>156</tspan><tspan x="698.0" dy="12">110</tspan><tspan x="698.0" dy="12">6E</tspan></text>
+<text class="chname" x="647.5" y="802.0" text-anchor="middle"></text>
+<text class="chnums" x="698.0" y="790.0" text-anchor="end"><tspan>157</tspan><tspan x="698.0" dy="12">111</tspan><tspan x="698.0" dy="12">6F</tspan></text>
+<text class="chname" x="732.5" y="127.0" text-anchor="middle"></text>
+<text class="chnums" x="783.0" y="115.0" text-anchor="end"><tspan>160</tspan><tspan x="783.0" dy="12">112</tspan><tspan x="783.0" dy="12">70</tspan></text>
+<text class="chname" x="732.5" y="172.0" text-anchor="middle"></text>
+<text class="chnums" x="783.0" y="160.0" text-anchor="end"><tspan>161</tspan><tspan x="783.0" dy="12">113</tspan><tspan x="783.0" dy="12">71</tspan></text>
+<text class="chname" x="732.5" y="217.0" text-anchor="middle"></text>
+<text class="chnums" x="783.0" y="205.0" text-anchor="end"><tspan>162</tspan><tspan x="783.0" dy="12">114</tspan><tspan x="783.0" dy="12">72</tspan></text>
+<text class="chname" x="732.5" y="262.0" text-anchor="middle"></text>
+<text class="chnums" x="783.0" y="250.0" text-anchor="end"><tspan>163</tspan><tspan x="783.0" dy="12">115</tspan><tspan x="783.0" dy="12">73</tspan></text>
+<text class="chname" x="732.5" y="307.0" text-anchor="middle"></text>
+<text class="chnums" x="783.0" y="295.0" text-anchor="end"><tspan>164</tspan><tspan x="783.0" dy="12">116</tspan><tspan x="783.0" dy="12">74</tspan></text>
+<text class="chname" x="732.5" y="352.0" text-anchor="middle"></text>
+<text class="chnums" x="783.0" y="340.0" text-anchor="end"><tspan>165</tspan><tspan x="783.0" dy="12">117</tspan><tspan x="783.0" dy="12">75</tspan></text>
+<text class="chname" x="732.5" y="397.0" text-anchor="middle"></text>
+<text class="chnums" x="783.0" y="385.0" text-anchor="end"><tspan>166</tspan><tspan x="783.0" dy="12">118</tspan><tspan x="783.0" dy="12">76</tspan></text>
+<text class="chname" x="732.5" y="442.0" text-anchor="middle"></text>
+<text class="chnums" x="783.0" y="430.0" text-anchor="end"><tspan>167</tspan><tspan x="783.0" dy="12">119</tspan><tspan x="783.0" dy="12">77</tspan></text>
+<text class="chname" x="732.5" y="487.0" text-anchor="middle"></text>
+<text class="chnums" x="783.0" y="475.0" text-anchor="end"><tspan>170</tspan><tspan x="783.0" dy="12">120</tspan><tspan x="783.0" dy="12">78</tspan></text>
+<text class="chname" x="732.5" y="532.0" text-anchor="middle"></text>
+<text class="chnums" x="783.0" y="520.0" text-anchor="end"><tspan>171</tspan><tspan x="783.0" dy="12">121</tspan><tspan x="783.0" dy="12">79</tspan></text>
+<text class="chname" x="732.5" y="577.0" text-anchor="middle"></text>
+<text class="chnums" x="783.0" y="565.0" text-anchor="end"><tspan>172</tspan><tspan x="783.0" dy="12">122</tspan><tspan x="783.0" dy="12">7A</tspan></text>
+<text class="chname" x="732.5" y="622.0" text-anchor="middle"></text>
+<text class="chnums" x="783.0" y="610.0" text-anchor="end"><tspan>173</tspan><tspan x="783.0" dy="12">123</tspan><tspan x="783.0" dy="12">7B</tspan></text>
+<text class="chname" x="732.5" y="667.0" text-anchor="middle"></text>
+<text class="chnums" x="783.0" y="655.0" text-anchor="end"><tspan>174</tspan><tspan x="783.0" dy="12">124</tspan><tspan x="783.0" dy="12">7C</tspan></text>
+<text class="chname" x="732.5" y="712.0" text-anchor="middle"></text>
+<text class="chnums" x="783.0" y="700.0" text-anchor="end"><tspan>175</tspan><tspan x="783.0" dy="12">125</tspan><tspan x="783.0" dy="12">7D</tspan></text>
+<text class="chname" x="732.5" y="757.0" text-anchor="middle"></text>
+<text class="chnums" x="783.0" y="745.0" text-anchor="end"><tspan>176</tspan><tspan x="783.0" dy="12">126</tspan><tspan x="783.0" dy="12">7E</tspan></text>
+<text class="chname" x="732.5" y="802.0" text-anchor="middle"></text>
+<text class="chnums" x="783.0" y="790.0" text-anchor="end"><tspan>177</tspan><tspan x="783.0" dy="12">127</tspan><tspan x="783.0" dy="12">7F</tspan></text>
+<line class="scanline" x1="646.18" y1="116.06" x2="646.25" y2="116.06"/>
+<line class="scanline" x1="645.52" y1="117.78" x2="646.91" y2="117.78"/>
+<line class="scanline" x1="644.86" y1="119.51" x2="647.57" y2="119.51"/>
+<line class="scanline" x1="644.20" y1="121.23" x2="648.23" y2="121.23"/>
+<line class="scanline" x1="644.86" y1="122.96" x2="647.57" y2="122.96"/>
+<line class="scanline" x1="645.52" y1="124.68" x2="646.91" y2="124.68"/>
+<line class="scanline" x1="646.18" y1="126.41" x2="646.25" y2="126.41"/>
+<line class="scanline" x1="644.20" y1="161.06" x2="644.27" y2="161.06"/>
+<line class="scanline" x1="646.18" y1="161.06" x2="646.25" y2="161.06"/>
+<line class="scanline" x1="648.16" y1="161.06" x2="648.23" y2="161.06"/>
+<line class="scanline" x1="644.86" y1="162.78" x2="644.93" y2="162.78"/>
+<line class="scanline" x1="647.50" y1="162.78" x2="647.57" y2="162.78"/>
+<line class="scanline" x1="644.20" y1="164.51" x2="644.27" y2="164.51"/>
+<line class="scanline" x1="646.18" y1="164.51" x2="646.25" y2="164.51"/>
+<line class="scanline" x1="648.16" y1="164.51" x2="648.23" y2="164.51"/>
+<line class="scanline" x1="644.86" y1="166.23" x2="644.93" y2="166.23"/>
+<line class="scanline" x1="647.50" y1="166.23" x2="647.57" y2="166.23"/>
+<line class="scanline" x1="644.20" y1="167.96" x2="644.27" y2="167.96"/>
+<line class="scanline" x1="646.18" y1="167.96" x2="646.25" y2="167.96"/>
+<line class="scanline" x1="648.16" y1="167.96" x2="648.23" y2="167.96"/>
+<line class="scanline" x1="644.86" y1="169.68" x2="644.93" y2="169.68"/>
+<line class="scanline" x1="647.50" y1="169.68" x2="647.57" y2="169.68"/>
+<line class="scanline" x1="644.20" y1="171.41" x2="644.27" y2="171.41"/>
+<line class="scanline" x1="646.18" y1="171.41" x2="646.25" y2="171.41"/>
+<line class="scanline" x1="648.16" y1="171.41" x2="648.23" y2="171.41"/>
+<line class="scanline" x1="644.20" y1="206.06" x2="644.27" y2="206.06"/>
+<line class="scanline" x1="646.84" y1="206.06" x2="646.91" y2="206.06"/>
+<line class="scanline" x1="644.20" y1="207.78" x2="644.27" y2="207.78"/>
+<line class="scanline" x1="646.84" y1="207.78" x2="646.91" y2="207.78"/>
+<line class="scanline" x1="644.20" y1="209.51" x2="646.91" y2="209.51"/>
+<line class="scanline" x1="644.20" y1="211.23" x2="644.27" y2="211.23"/>
+<line class="scanline" x1="646.84" y1="211.23" x2="646.91" y2="211.23"/>
+<line class="scanline" x1="644.20" y1="212.96" x2="644.27" y2="212.96"/>
+<line class="scanline" x1="646.84" y1="212.96" x2="646.91" y2="212.96"/>
+<line class="scanline" x1="645.52" y1="214.68" x2="648.23" y2="214.68"/>
+<line class="scanline" x1="646.84" y1="216.41" x2="646.91" y2="216.41"/>
+<line class="scanline" x1="646.84" y1="218.13" x2="646.91" y2="218.13"/>
+<line class="scanline" x1="646.84" y1="219.86" x2="646.91" y2="219.86"/>
+<line class="scanline" x1="644.20" y1="251.06" x2="646.25" y2="251.06"/>
+<line class="scanline" x1="644.20" y1="252.78" x2="644.27" y2="252.78"/>
+<line class="scanline" x1="644.20" y1="254.51" x2="645.59" y2="254.51"/>
+<line class="scanline" x1="644.20" y1="256.23" x2="644.27" y2="256.23"/>
+<line class="scanline" x1="644.20" y1="257.96" x2="644.27" y2="257.96"/>
+<line class="scanline" x1="646.18" y1="257.96" x2="648.23" y2="257.96"/>
+<line class="scanline" x1="646.18" y1="259.68" x2="646.25" y2="259.68"/>
+<line class="scanline" x1="646.18" y1="261.41" x2="647.57" y2="261.41"/>
+<line class="scanline" x1="646.18" y1="263.13" x2="646.25" y2="263.13"/>
+<line class="scanline" x1="646.18" y1="264.86" x2="646.25" y2="264.86"/>
+<line class="scanline" x1="644.86" y1="296.06" x2="646.91" y2="296.06"/>
+<line class="scanline" x1="644.20" y1="297.78" x2="644.27" y2="297.78"/>
+<line class="scanline" x1="644.20" y1="299.51" x2="644.27" y2="299.51"/>
+<line class="scanline" x1="644.86" y1="301.23" x2="646.91" y2="301.23"/>
+<line class="scanline" x1="645.52" y1="302.96" x2="647.57" y2="302.96"/>
+<line class="scanline" x1="645.52" y1="304.68" x2="645.59" y2="304.68"/>
+<line class="scanline" x1="648.16" y1="304.68" x2="648.23" y2="304.68"/>
+<line class="scanline" x1="645.52" y1="306.41" x2="647.57" y2="306.41"/>
+<line class="scanline" x1="645.52" y1="308.13" x2="645.59" y2="308.13"/>
+<line class="scanline" x1="648.16" y1="308.13" x2="648.23" y2="308.13"/>
+<line class="scanline" x1="645.52" y1="309.86" x2="645.59" y2="309.86"/>
+<line class="scanline" x1="648.16" y1="309.86" x2="648.23" y2="309.86"/>
+<line class="scanline" x1="644.20" y1="341.06" x2="644.27" y2="341.06"/>
+<line class="scanline" x1="644.20" y1="342.78" x2="644.27" y2="342.78"/>
+<line class="scanline" x1="644.20" y1="344.51" x2="644.27" y2="344.51"/>
+<line class="scanline" x1="644.20" y1="346.23" x2="646.91" y2="346.23"/>
+<line class="scanline" x1="645.52" y1="347.96" x2="648.23" y2="347.96"/>
+<line class="scanline" x1="645.52" y1="349.68" x2="645.59" y2="349.68"/>
+<line class="scanline" x1="645.52" y1="351.41" x2="647.57" y2="351.41"/>
+<line class="scanline" x1="645.52" y1="353.13" x2="645.59" y2="353.13"/>
+<line class="scanline" x1="645.52" y1="354.86" x2="645.59" y2="354.86"/>
+<line class="scanline" x1="645.52" y1="386.06" x2="646.91" y2="386.06"/>
+<line class="scanline" x1="644.86" y1="387.78" x2="644.93" y2="387.78"/>
+<line class="scanline" x1="647.50" y1="387.78" x2="647.57" y2="387.78"/>
+<line class="scanline" x1="644.86" y1="389.51" x2="644.93" y2="389.51"/>
+<line class="scanline" x1="647.50" y1="389.51" x2="647.57" y2="389.51"/>
+<line class="scanline" x1="645.52" y1="391.23" x2="646.91" y2="391.23"/>
+<line class="scanline" x1="646.18" y1="432.78" x2="646.25" y2="432.78"/>
+<line class="scanline" x1="646.18" y1="434.51" x2="646.25" y2="434.51"/>
+<line class="scanline" x1="644.20" y1="436.23" x2="648.23" y2="436.23"/>
+<line class="scanline" x1="646.18" y1="437.96" x2="646.25" y2="437.96"/>
+<line class="scanline" x1="646.18" y1="439.68" x2="646.25" y2="439.68"/>
+<line class="scanline" x1="644.20" y1="441.41" x2="648.23" y2="441.41"/>
+<line class="scanline" x1="644.20" y1="476.06" x2="644.27" y2="476.06"/>
+<line class="scanline" x1="646.84" y1="476.06" x2="646.91" y2="476.06"/>
+<line class="scanline" x1="644.20" y1="477.78" x2="644.93" y2="477.78"/>
+<line class="scanline" x1="646.84" y1="477.78" x2="646.91" y2="477.78"/>
+<line class="scanline" x1="644.20" y1="479.51" x2="646.91" y2="479.51"/>
+<line class="scanline" x1="644.20" y1="481.23" x2="644.27" y2="481.23"/>
+<line class="scanline" x1="646.18" y1="481.23" x2="646.91" y2="481.23"/>
+<line class="scanline" x1="644.20" y1="482.96" x2="644.27" y2="482.96"/>
+<line class="scanline" x1="646.84" y1="482.96" x2="646.91" y2="482.96"/>
+<line class="scanline" x1="645.52" y1="484.68" x2="645.59" y2="484.68"/>
+<line class="scanline" x1="645.52" y1="486.41" x2="645.59" y2="486.41"/>
+<line class="scanline" x1="645.52" y1="488.13" x2="645.59" y2="488.13"/>
+<line class="scanline" x1="645.52" y1="489.86" x2="648.23" y2="489.86"/>
+<line class="scanline" x1="644.20" y1="521.06" x2="644.27" y2="521.06"/>
+<line class="scanline" x1="646.84" y1="521.06" x2="646.91" y2="521.06"/>
+<line class="scanline" x1="644.20" y1="522.78" x2="644.27" y2="522.78"/>
+<line class="scanline" x1="646.84" y1="522.78" x2="646.91" y2="522.78"/>
+<line class="scanline" x1="644.86" y1="524.51" x2="646.25" y2="524.51"/>
+<line class="scanline" x1="645.52" y1="526.23" x2="645.59" y2="526.23"/>
+<line class="scanline" x1="645.52" y1="527.96" x2="648.23" y2="527.96"/>
+<line class="scanline" x1="646.84" y1="529.68" x2="646.91" y2="529.68"/>
+<line class="scanline" x1="646.84" y1="531.41" x2="646.91" y2="531.41"/>
+<line class="scanline" x1="646.84" y1="533.13" x2="646.91" y2="533.13"/>
+<line class="scanline" x1="646.84" y1="534.86" x2="646.91" y2="534.86"/>
+<line class="scanline" x1="646.18" y1="564.33" x2="646.25" y2="564.33"/>
+<line class="scanline" x1="646.18" y1="566.06" x2="646.25" y2="566.06"/>
+<line class="scanline" x1="646.18" y1="567.78" x2="646.25" y2="567.78"/>
+<line class="scanline" x1="646.18" y1="569.51" x2="646.25" y2="569.51"/>
+<line class="scanline" x1="644.20" y1="571.23" x2="646.25" y2="571.23"/>
+<line class="scanline" x1="644.20" y1="616.23" x2="646.25" y2="616.23"/>
+<line class="scanline" x1="646.18" y1="617.96" x2="646.25" y2="617.96"/>
+<line class="scanline" x1="646.18" y1="619.68" x2="646.25" y2="619.68"/>
+<line class="scanline" x1="646.18" y1="621.41" x2="646.25" y2="621.41"/>
+<line class="scanline" x1="646.18" y1="623.13" x2="646.25" y2="623.13"/>
+<line class="scanline" x1="646.18" y1="624.86" x2="646.25" y2="624.86"/>
+<line class="scanline" x1="646.18" y1="661.23" x2="649.55" y2="661.23"/>
+<line class="scanline" x1="646.18" y1="662.96" x2="646.25" y2="662.96"/>
+<line class="scanline" x1="646.18" y1="664.68" x2="646.25" y2="664.68"/>
+<line class="scanline" x1="646.18" y1="666.41" x2="646.25" y2="666.41"/>
+<line class="scanline" x1="646.18" y1="668.13" x2="646.25" y2="668.13"/>
+<line class="scanline" x1="646.18" y1="669.86" x2="646.25" y2="669.86"/>
+<line class="scanline" x1="646.18" y1="699.33" x2="646.25" y2="699.33"/>
+<line class="scanline" x1="646.18" y1="701.06" x2="646.25" y2="701.06"/>
+<line class="scanline" x1="646.18" y1="702.78" x2="646.25" y2="702.78"/>
+<line class="scanline" x1="646.18" y1="704.51" x2="646.25" y2="704.51"/>
+<line class="scanline" x1="646.18" y1="706.23" x2="649.55" y2="706.23"/>
+<line class="scanline" x1="646.18" y1="744.33" x2="646.25" y2="744.33"/>
+<line class="scanline" x1="646.18" y1="746.06" x2="646.25" y2="746.06"/>
+<line class="scanline" x1="646.18" y1="747.78" x2="646.25" y2="747.78"/>
+<line class="scanline" x1="646.18" y1="749.51" x2="646.25" y2="749.51"/>
+<line class="scanline" x1="644.20" y1="751.23" x2="649.55" y2="751.23"/>
+<line class="scanline" x1="646.18" y1="752.96" x2="646.25" y2="752.96"/>
+<line class="scanline" x1="646.18" y1="754.68" x2="646.25" y2="754.68"/>
+<line class="scanline" x1="646.18" y1="756.41" x2="646.25" y2="756.41"/>
+<line class="scanline" x1="646.18" y1="758.13" x2="646.25" y2="758.13"/>
+<line class="scanline" x1="646.18" y1="759.86" x2="646.25" y2="759.86"/>
+<line class="scanline" x1="644.20" y1="789.33" x2="649.55" y2="789.33"/>
+<line class="scanline" x1="729.20" y1="117.78" x2="734.55" y2="117.78"/>
+<line class="scanline" x1="729.20" y1="166.23" x2="734.55" y2="166.23"/>
+<line class="scanline" x1="729.20" y1="214.68" x2="734.55" y2="214.68"/>
+<line class="scanline" x1="729.20" y1="263.13" x2="734.55" y2="263.13"/>
+<line class="scanline" x1="731.18" y1="294.33" x2="731.25" y2="294.33"/>
+<line class="scanline" x1="731.18" y1="296.06" x2="731.25" y2="296.06"/>
+<line class="scanline" x1="731.18" y1="297.78" x2="731.25" y2="297.78"/>
+<line class="scanline" x1="731.18" y1="299.51" x2="731.25" y2="299.51"/>
+<line class="scanline" x1="731.18" y1="301.23" x2="734.55" y2="301.23"/>
+<line class="scanline" x1="731.18" y1="302.96" x2="731.25" y2="302.96"/>
+<line class="scanline" x1="731.18" y1="304.68" x2="731.25" y2="304.68"/>
+<line class="scanline" x1="731.18" y1="306.41" x2="731.25" y2="306.41"/>
+<line class="scanline" x1="731.18" y1="308.13" x2="731.25" y2="308.13"/>
+<line class="scanline" x1="731.18" y1="309.86" x2="731.25" y2="309.86"/>
+<line class="scanline" x1="731.18" y1="339.33" x2="731.25" y2="339.33"/>
+<line class="scanline" x1="731.18" y1="341.06" x2="731.25" y2="341.06"/>
+<line class="scanline" x1="731.18" y1="342.78" x2="731.25" y2="342.78"/>
+<line class="scanline" x1="731.18" y1="344.51" x2="731.25" y2="344.51"/>
+<line class="scanline" x1="729.20" y1="346.23" x2="731.25" y2="346.23"/>
+<line class="scanline" x1="731.18" y1="347.96" x2="731.25" y2="347.96"/>
+<line class="scanline" x1="731.18" y1="349.68" x2="731.25" y2="349.68"/>
+<line class="scanline" x1="731.18" y1="351.41" x2="731.25" y2="351.41"/>
+<line class="scanline" x1="731.18" y1="353.13" x2="731.25" y2="353.13"/>
+<line class="scanline" x1="731.18" y1="354.86" x2="731.25" y2="354.86"/>
+<line class="scanline" x1="731.18" y1="384.33" x2="731.25" y2="384.33"/>
+<line class="scanline" x1="731.18" y1="386.06" x2="731.25" y2="386.06"/>
+<line class="scanline" x1="731.18" y1="387.78" x2="731.25" y2="387.78"/>
+<line class="scanline" x1="731.18" y1="389.51" x2="731.25" y2="389.51"/>
+<line class="scanline" x1="729.20" y1="391.23" x2="734.55" y2="391.23"/>
+<line class="scanline" x1="729.20" y1="436.23" x2="734.55" y2="436.23"/>
+<line class="scanline" x1="731.18" y1="437.96" x2="731.25" y2="437.96"/>
+<line class="scanline" x1="731.18" y1="439.68" x2="731.25" y2="439.68"/>
+<line class="scanline" x1="731.18" y1="441.41" x2="731.25" y2="441.41"/>
+<line class="scanline" x1="731.18" y1="443.13" x2="731.25" y2="443.13"/>
+<line class="scanline" x1="731.18" y1="444.86" x2="731.25" y2="444.86"/>
+<line class="scanline" x1="731.18" y1="474.33" x2="731.25" y2="474.33"/>
+<line class="scanline" x1="731.18" y1="476.06" x2="731.25" y2="476.06"/>
+<line class="scanline" x1="731.18" y1="477.78" x2="731.25" y2="477.78"/>
+<line class="scanline" x1="731.18" y1="479.51" x2="731.25" y2="479.51"/>
+<line class="scanline" x1="731.18" y1="481.23" x2="731.25" y2="481.23"/>
+<line class="scanline" x1="731.18" y1="482.96" x2="731.25" y2="482.96"/>
+<line class="scanline" x1="731.18" y1="484.68" x2="731.25" y2="484.68"/>
+<line class="scanline" x1="731.18" y1="486.41" x2="731.25" y2="486.41"/>
+<line class="scanline" x1="731.18" y1="488.13" x2="731.25" y2="488.13"/>
+<line class="scanline" x1="731.18" y1="489.86" x2="731.25" y2="489.86"/>
+<line class="scanline" x1="733.16" y1="521.06" x2="733.23" y2="521.06"/>
+<line class="scanline" x1="731.84" y1="522.78" x2="731.91" y2="522.78"/>
+<line class="scanline" x1="730.52" y1="524.51" x2="730.59" y2="524.51"/>
+<line class="scanline" x1="729.20" y1="526.23" x2="729.27" y2="526.23"/>
+<line class="scanline" x1="730.52" y1="527.96" x2="730.59" y2="527.96"/>
+<line class="scanline" x1="731.84" y1="529.68" x2="731.91" y2="529.68"/>
+<line class="scanline" x1="733.16" y1="531.41" x2="733.23" y2="531.41"/>
+<line class="scanline" x1="729.20" y1="533.13" x2="733.23" y2="533.13"/>
+<line class="scanline" x1="729.20" y1="566.06" x2="729.27" y2="566.06"/>
+<line class="scanline" x1="730.52" y1="567.78" x2="730.59" y2="567.78"/>
+<line class="scanline" x1="731.84" y1="569.51" x2="731.91" y2="569.51"/>
+<line class="scanline" x1="733.16" y1="571.23" x2="733.23" y2="571.23"/>
+<line class="scanline" x1="731.84" y1="572.96" x2="731.91" y2="572.96"/>
+<line class="scanline" x1="730.52" y1="574.68" x2="730.59" y2="574.68"/>
+<line class="scanline" x1="729.20" y1="576.41" x2="729.27" y2="576.41"/>
+<line class="scanline" x1="729.20" y1="578.13" x2="733.23" y2="578.13"/>
+<line class="scanline" x1="729.20" y1="614.51" x2="733.23" y2="614.51"/>
+<line class="scanline" x1="730.52" y1="616.23" x2="730.59" y2="616.23"/>
+<line class="scanline" x1="732.50" y1="616.23" x2="732.57" y2="616.23"/>
+<line class="scanline" x1="730.52" y1="617.96" x2="730.59" y2="617.96"/>
+<line class="scanline" x1="732.50" y1="617.96" x2="732.57" y2="617.96"/>
+<line class="scanline" x1="730.52" y1="619.68" x2="730.59" y2="619.68"/>
+<line class="scanline" x1="732.50" y1="619.68" x2="732.57" y2="619.68"/>
+<line class="scanline" x1="729.86" y1="621.41" x2="729.93" y2="621.41"/>
+<line class="scanline" x1="732.50" y1="621.41" x2="732.57" y2="621.41"/>
+<line class="scanline" x1="733.16" y1="656.06" x2="733.23" y2="656.06"/>
+<line class="scanline" x1="732.50" y1="657.78" x2="732.57" y2="657.78"/>
+<line class="scanline" x1="729.20" y1="659.51" x2="733.23" y2="659.51"/>
+<line class="scanline" x1="731.18" y1="661.23" x2="731.25" y2="661.23"/>
+<line class="scanline" x1="729.20" y1="662.96" x2="733.23" y2="662.96"/>
+<line class="scanline" x1="729.86" y1="664.68" x2="729.93" y2="664.68"/>
+<line class="scanline" x1="729.20" y1="666.41" x2="729.27" y2="666.41"/>
+<line class="scanline" x1="731.18" y1="701.06" x2="732.57" y2="701.06"/>
+<line class="scanline" x1="730.52" y1="702.78" x2="730.59" y2="702.78"/>
+<line class="scanline" x1="733.16" y1="702.78" x2="733.23" y2="702.78"/>
+<line class="scanline" x1="730.52" y1="704.51" x2="730.59" y2="704.51"/>
+<line class="scanline" x1="729.20" y1="706.23" x2="731.91" y2="706.23"/>
+<line class="scanline" x1="730.52" y1="707.96" x2="730.59" y2="707.96"/>
+<line class="scanline" x1="729.86" y1="709.68" x2="731.91" y2="709.68"/>
+<line class="scanline" x1="729.20" y1="711.41" x2="730.59" y2="711.41"/>
+<line class="scanline" x1="732.50" y1="711.41" x2="733.23" y2="711.41"/>
+<line class="scanline" x1="729.86" y1="713.13" x2="729.93" y2="713.13"/>
+<line class="scanline" x1="731.18" y1="751.23" x2="731.25" y2="751.23"/>
+<text class="chnums" x="562.5" y="802.0" text-anchor="middle"><tspan>(BLANK)</tspan></text>
+<text class="chnums" x="647.5" y="814.0" text-anchor="middle"><tspan>SCAN 1</tspan></text>
+<text class="chnums" x="732.5" y="139.0" text-anchor="middle"><tspan>SCAN 3</tspan></text>
+<text class="chnums" x="732.5" y="184.0" text-anchor="middle"><tspan>SCAN 5</tspan></text>
+<text class="chnums" x="732.5" y="229.0" text-anchor="middle"><tspan>SCAN 7</tspan></text>
+<text class="chnums" x="732.5" y="274.0" text-anchor="middle"><tspan>SCAN 9</tspan></text>
+<rect x="110.0" y="10.0" width="680.0" height="810.0" stroke="#000" stroke-width="2" fill="none"/>
+<line x1="110.0" y1="35.0" x2="790.0" y2="35.0" stroke="#000" stroke-width="2"/>
+<line x1="110.0" y1="100.0" x2="790.0" y2="100.0" stroke="#000" stroke-width="2"/>
+<line x1="110.0" y1="145.0" x2="790.0" y2="145.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="190.0" x2="790.0" y2="190.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="235.0" x2="790.0" y2="235.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="280.0" x2="790.0" y2="280.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="325.0" x2="790.0" y2="325.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="370.0" x2="790.0" y2="370.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="415.0" x2="790.0" y2="415.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="460.0" x2="790.0" y2="460.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="505.0" x2="790.0" y2="505.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="550.0" x2="790.0" y2="550.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="595.0" x2="790.0" y2="595.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="640.0" x2="790.0" y2="640.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="685.0" x2="790.0" y2="685.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="730.0" x2="790.0" y2="730.0" stroke="#000" stroke-width="1"/>
+<line x1="110.0" y1="775.0" x2="790.0" y2="775.0" stroke="#000" stroke-width="1"/>
+<line x1="165.0" y1="100.0" x2="165.0" y2="820.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="152.5" y="28.0" text-anchor="middle">0</text>
+<text class="chnums" x="127.0" y="50.0" text-anchor="middle">0</text>
+<text class="chnums" x="144.0" y="63.0" text-anchor="middle">0</text>
+<text class="chnums" x="161.0" y="76.0" text-anchor="middle">0</text>
+<text class="chnums" x="178.0" y="89.0" text-anchor="middle">0</text>
+<line x1="195.0" y1="10.0" x2="195.0" y2="820.0" stroke="#000" stroke-width="2"/>
+<line x1="250.0" y1="100.0" x2="250.0" y2="820.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="237.5" y="28.0" text-anchor="middle">1</text>
+<text class="chnums" x="212.0" y="50.0" text-anchor="middle">0</text>
+<text class="chnums" x="229.0" y="63.0" text-anchor="middle">0</text>
+<text class="chnums" x="246.0" y="76.0" text-anchor="middle">0</text>
+<text class="chnums" x="263.0" y="89.0" text-anchor="middle">1</text>
+<line x1="280.0" y1="10.0" x2="280.0" y2="820.0" stroke="#000" stroke-width="2"/>
+<line x1="335.0" y1="100.0" x2="335.0" y2="820.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="322.5" y="28.0" text-anchor="middle">2</text>
+<text class="chnums" x="297.0" y="50.0" text-anchor="middle">0</text>
+<text class="chnums" x="314.0" y="63.0" text-anchor="middle">0</text>
+<text class="chnums" x="331.0" y="76.0" text-anchor="middle">1</text>
+<text class="chnums" x="348.0" y="89.0" text-anchor="middle">0</text>
+<line x1="365.0" y1="10.0" x2="365.0" y2="820.0" stroke="#000" stroke-width="2"/>
+<line x1="420.0" y1="100.0" x2="420.0" y2="820.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="407.5" y="28.0" text-anchor="middle">3</text>
+<text class="chnums" x="382.0" y="50.0" text-anchor="middle">0</text>
+<text class="chnums" x="399.0" y="63.0" text-anchor="middle">0</text>
+<text class="chnums" x="416.0" y="76.0" text-anchor="middle">1</text>
+<text class="chnums" x="433.0" y="89.0" text-anchor="middle">1</text>
+<line x1="450.0" y1="10.0" x2="450.0" y2="820.0" stroke="#000" stroke-width="2"/>
+<line x1="505.0" y1="100.0" x2="505.0" y2="820.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="492.5" y="28.0" text-anchor="middle">4</text>
+<text class="chnums" x="467.0" y="50.0" text-anchor="middle">0</text>
+<text class="chnums" x="484.0" y="63.0" text-anchor="middle">1</text>
+<text class="chnums" x="501.0" y="76.0" text-anchor="middle">0</text>
+<text class="chnums" x="518.0" y="89.0" text-anchor="middle">0</text>
+<line x1="535.0" y1="10.0" x2="535.0" y2="820.0" stroke="#000" stroke-width="2"/>
+<line x1="590.0" y1="100.0" x2="590.0" y2="820.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="577.5" y="28.0" text-anchor="middle">5</text>
+<text class="chnums" x="552.0" y="50.0" text-anchor="middle">0</text>
+<text class="chnums" x="569.0" y="63.0" text-anchor="middle">1</text>
+<text class="chnums" x="586.0" y="76.0" text-anchor="middle">0</text>
+<text class="chnums" x="603.0" y="89.0" text-anchor="middle">1</text>
+<line x1="620.0" y1="10.0" x2="620.0" y2="820.0" stroke="#000" stroke-width="2"/>
+<line x1="675.0" y1="100.0" x2="675.0" y2="820.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="662.5" y="28.0" text-anchor="middle">6</text>
+<text class="chnums" x="637.0" y="50.0" text-anchor="middle">0</text>
+<text class="chnums" x="654.0" y="63.0" text-anchor="middle">1</text>
+<text class="chnums" x="671.0" y="76.0" text-anchor="middle">1</text>
+<text class="chnums" x="688.0" y="89.0" text-anchor="middle">0</text>
+<line x1="705.0" y1="10.0" x2="705.0" y2="820.0" stroke="#000" stroke-width="2"/>
+<line x1="760.0" y1="100.0" x2="760.0" y2="820.0" stroke="#000" stroke-width="1"/>
+<text class="chname" x="747.5" y="28.0" text-anchor="middle">7</text>
+<text class="chnums" x="722.0" y="50.0" text-anchor="middle">0</text>
+<text class="chnums" x="739.0" y="63.0" text-anchor="middle">1</text>
+<text class="chnums" x="756.0" y="76.0" text-anchor="middle">1</text>
+<text class="chnums" x="773.0" y="89.0" text-anchor="middle">1</text>
+<rect x="110.0" y="878.5" width="100.0" height="52.9" stroke="#000" stroke-width="2" fill="none"/>
+<line x1="174.7" y1="878.5" x2="174.7" y2="931.4" stroke="#000" stroke-width="1"/>
+<text class="chname" x="142.4" y="904.4" text-anchor="middle">ESC</text>
+<text class="chnums" x="201.8" y="896.1" text-anchor="end"><tspan>33</tspan><tspan x="201.8" dy="14.1">27</tspan><tspan x="201.8" dy="14.1">1B</tspan></text>
+<text class="chnums" x="221.8" y="896.1" text-anchor="start"><tspan>OCTAL</tspan><tspan x="221.8" dy="14.1">DECIMAL</tspan><tspan x="221.8" dy="14.1">HEX</tspan></text>
+<text class="chnums" x="105.0" y="896.1" text-anchor="end">CHARACTER</text>
+<text class="chkey" x="105.0" y="873.5" text-anchor="end">KEY</text>
+<text class="drawpart" x="790.0" y="931.4" text-anchor="end">MA-0893C-83</text>
+  </g>
+</svg>
