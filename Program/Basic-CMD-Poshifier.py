@@ -1,17 +1,165 @@
 MAX_PROMPT_LEN = 511  # this counts the $ signs
 SPECIAL_CHARS = ('\\', '=', '(', ')', '&', '<', '^', '>', '|')
-ERASING_AND_CLEARING = {
-    'ERASE_CURSOR_END_DISPLAY': '[0J',  # erase from the cursor to the end of the display
-    'ERASE_START_DISPLAY_CURSOR': '[1J',  # erase from the start of the display to the cursor
-    'ERASE_SCREEN': '[2J',  # erase from the start of the display to the end of the display
-    'CLEAR_CURSOR_END_LINE': '[K',  # clear from the cursor to the end of the line
-    'ERASE_START_LINE_CURSOR': '[1K',  # erase from the start of the line to the cursor, inclusive
-    'ERASE_LINE': '[2K'  # erase line
+
+ANSI_FORMATTING = {
+    # Text formatting
+    'NORMAL': '\033[0m',  # Reset/Normal all attributes
+    'BOLD': '\033[1m',  # Bold or increased intensity
+    'DIM': '\033[2m',  # Faint/dim (decreased intensity)
+    'ITALIC': '\033[3m',  # Italic
+    'UNDERLINE': '\033[4m',  # Underline
+    'SLOW_BLINK': '\033[5m',  # Blink (slow)
+    'FAST_BLINK': '\033[6m',  # Blink (rapid)
+    'REVERSE': '\033[7m',  # Reverse video
+    'HIDE': '\033[8m',  # Conceal/hide
+    'STRIKETHROUGH': '\033[9m',  # Crossed-out/strikethrough
+    'PRIMARY_FONT': '\033[10m',  # Primary (default) font
+    'ALT_FONT_ONE': '\033[11m',  # First alternate font
+    'ALT_FONT_TWO': '\033[12m',  # Second alternate font
+    'ALT_FONT_THREE': '\033[13m',  # Third alternate font
+    'ALT_FONT_FOUR': '\033[14m',  # Fourth alternate font
+    'ALT_FONT_FIVE': '\033[15m',  # Fifth alternate font
+    'ALT_FONT_SIX': '\033[16m',  # Sixth alternate font
+    'ALT_FONT_SEVEN': '\033[17m',  # Seventh alternate font
+    'ALT_FONT_EIGHT': '\033[18m',  # Eighth alternate font
+    'ALT_FONT_NINE': '\033[19m',  # Ninth alternate font
+    'FRAKTUR': '\033[20m',  # Fraktur
+    'BOLD_OFF': '\033[21m',  # Bold off or rarely Double Underline
+    'NORMAL_INTENSITY': '\033[22m',  # Normal color or intensity
+    'ITALIC_OFF_FRAKTUR_OFF': '\033[23m',  # Not italic, Not Fraktur
+    'UNDERLINE_OFF': '\033[24m',  # Underline off
+    'BLINK_OFF': '\033[25m',  # Blink off
+    'RESERVED_26': '\033[26m',  # Reserved
+    'NEGATIVE': '\033[27m',  # Image negative
+    'HIDE_OFF': '\033[28m',  # Reveal concealed text
+    'STRIKETHROUGH_OFF': '\033[29m',  # Not crossed-out
+    'FG_BLACK': '\033[30m',  # Set foreground color to Black
+    'FG_RED': '\033[31m',  # Set foreground color to Red
+    'FG_GREEN': '\033[32m',  # Set foreground color to Green
+    'FG_YELLOW': '\033[33m',  # Set foreground color to Yellow
+    'FG_BLUE': '\033[34m',  # Set foreground color to Blue
+    'FG_MAGENTA': '\033[35m',  # Set foreground color to Magenta
+    'FG_CYAN': '\033[36m',  # Set foreground color to Cyan
+    'FG_WHITE': '\033[37m',  # Set foreground color to White
+    'FG_EXTENDED:<n>': '\033[38;5;<n>m',  # Used to select colors from a range of 256 colors for the foreground
+    'FG_DEFAULT': '\033[39m',  # Set foreground color to default (original)
+    'BG_BLACK': '\033[40m',  # Set background color to Black
+    'BG_RED': '\033[41m',  # Set background color to Red
+    'BG_GREEN': '\033[42m',  # Set background color to Green
+    'BG_YELLOW': '\033[43m',  # Set background color to Yellow
+    'BG_BLUE': '\033[44m',  # Set background color to Blue
+    'BG_MAGENTA': '\033[45m',  # Set background color to Magenta
+    'BG_CYAN': '\033[46m',  # Set background color to Cyan
+    'BG_WHITE': '\033[47m',  # Set background color to White
+    'BG_EXTENDED:<n>': '\033[48;5;<n>m',  # Used to select colors from a range of 256 colors for the background
+    'BG_DEFAULT': '\033[49m',  # Set background color to default (original)
+    'PROPORTIONAL_SPACING_OFF': '\033[50m',  # Disable proportional spacing
+    'FRAME': '\033[51m',  # Framed
+    'ENCIRCLE': '\033[52m',  # Encircled
+    'OVERLINE': '\033[53m',  # Overlined
+    'FRAME_OFF_ENCIRCLE_OFF': '\033[54m',  # Not framed or encircled
+    'OVERLINE_OFF': '\033[55m',  # Not overlined
+    'FG_BRIGHT_BLACK': '\033[90m',  # Set the foreground color to dark gray
+    'FG_BRIGHT_RED': '\033[91m',  # Set the foreground color to light red
+    'FG_BRIGHT_GREEN': '\033[92m',  # Set the foreground color to light green
+    'FG_BRIGHT_YELLOW': '\033[93m',  # Set the foreground color to yellow
+    'FG_BRIGHT_BLUE': '\033[94m',  # Set the foreground color to light blue
+    'FG_BRIGHT_MAGENTA': '\033[95m',  # Set the foreground color to light magenta
+    'FG_BRIGHT_CYAN': '\033[96m',  # Set the foreground color to light cyan
+    'FG_BRIGHT_WHITE': '\033[97m',  # Set the foreground color to white
+    'BG_BRIGHT_BLACK': '\033[100m',  # Set the background color to black (gray)
+    'BG_BRIGHT_RED': '\033[101m',  # Set the background color to red
+    'BG_BRIGHT_GREEN': '\033[102m',  # Set the background color to green
+    'BG_BRIGHT_YELLOW': '\033[103m',  # Set the background color to yellow
+    'BG_BRIGHT_BLUE': '\033[104m',  # Set the background color to blue
+    'BG_BRIGHT_MAGENTA': '\033[105m',  # Set the background color to magenta
+    'BG_BRIGHT_CYAN': '\033[106m',  # Set the background color to cyan
+    'BG_BRIGHT_WHITE': '\033[107m',  # Set the background color to white
+    # Cursor formatting/visibility
+    'BLINKING_CURSOR': '\033[?12h',  # start the cursor blinking
+    'BLINKING_CURSOR_OFF': '\033[?12l',  # stop blinking the cursor
+    'SHOW_CURSOR': '\033[?25h',  # show the cursor
+    'HIDE_CURSOR': '\033[?25l',  # hide the cursor
+    # Erasing
+    'ERASE_CURSOR_END_OF_SCREEN': '\033[0J',  # erase from the cursor to the end of the screen
+    'ERASE_CURSOR_START_OF_SCREEN': '\033[1J',  # erase from the cursor to the beginning of the screen
+    'ERASE_SCREEN': '\033[2J',  # erase the screen
+    'ERASE_CURSOR_END_OF_LINE': '\033[0K',  # erase the screen
+    'ERASE_CURSOR_START_OF_LINE': '\033[1K',  # erase the screen
+    'ERASE_LINE': '\033[2K',  # erase the screen
+    # Cursor positioning
+    'CURSOR_UP:<n>': '\033[<n>A',  # Moves the cursor up <n> lines
+    'CURSOR_DOWN:<n>': '\033[<n>B',  # Moves the cursor down <n> lines
+    'CURSOR_RIGHT:<n>': '\033[<n>C',  # Moves the cursor right <n> lines
+    'CURSOR_LEFT:<n>': '\033[<n>D',  # Moves the cursor left <n> lines
+    'CURSOR_START_OF_LINE_DOWN:<n>': '\033[<n>E',  # Moves cursor to beginning of next line, <n> lines down
+    'CURSOR_START_OF_LINE_UP:<n>': '\033[<n>F',  # Moves cursor to beginning of previous line, <n> lines up
+    'CURSOR_COLUMN:<n>': '\033[<n>G',  # Moves the cursor to column <n>
+    # Cursor shape
+    'CURSOR_SHAPE_DEFAULT': '\033[0 q',  # Default cursor shape configured by the user
+    'CURSOR_SHAPE_BLINKING_BLOCK': '\033[1 q',  # Blinking block cursor shape
+    'CURSOR_SHAPE_STEADY_BLOCK': '\033[2 q',  # Steady block cursor shape
+    'CURSOR_SHAPE_BLINKING_UNDERLINE': '\033[3 q',  # Blinking underline cursor shape
+    'CURSOR_SHAPE_STEADY_UNDERLINE': '\033[4 q',  # Steady underline cursor shape
+    'CURSOR_SHAPE_BLINKING_BAR': '\033[5 q',  # Blinking bar cursor shape
+    'CURSOR_SHAPE_STEADY_BAR': '\033[6 q',  # Steady bar cursor shape
+    # Viewport positioning
+    'SCROLL_TEXT_UP:<n>': '\033[<n>S',  # Scroll text up by <n>. Also known as pan down, new lines fill in from the
+                                        # bottom of the screen
+    'SCROLL_TEXT_DOWN:<n>': '\033[<n>T',  # Scroll down by <n>. Also known as pan up, new lines fill in from the top of
+                                          # the screen
+    # Add/remove lines with buffer
+    'BUFFER_INSERT_LINE:<n>': '\033[<n>L',  # Inserts <n> lines into the buffer at the cursor position. The line the
+                                            # cursor is on, and lines below it, will be shifted downwards.
+    'BUFFER_DELETE_LINE:<n>': '\033[<n>M',  # Deletes <n> lines from the buffer, starting with the row the cursor is on.
+    # Query state
+    'QUERY_CURSOR_POSITION': '\033[6n',  # Emit the cursor position as: ESC [ <r> ; <c> R Where <r> = cursor row and
+                                         # <c> = cursor column
+    'QUERY_DEVICE_ATTRIBUTES': '\033[0c',  # Report the terminal identity. Will emit “\x1b[?1;0c”, indicating
+                                           # "VT101 with No Options".
+    # Tabs
+    'CURSOR_FORWARD_TAB:<n>': '\033[<n>I',  # cursor moves <n> horizontal forward tabs
+    'CURSOR_BACKWARD_TAB:<n>': '\033[<n>Z',  # cursor moves <n> horizontal backwards tabs
+    # Windows Title
+    'TITLE:<n>': ']0;<n>',  # *sets windows title
+    # Soft reset of settings
+    'SOFT_RESET': '\033[!p',  # Reset the settings listed in the Soft Reset table below to their default
+    # Designated character sets
+    'DEC_LINE_DRAWING_MODE': '\033(0',  # Enables DEC Line Drawing Mode
+    'ASCII_MODE': '\033(B'  # Enables ASCII Mode (Default)
 }
-DELETING = {
-    'DELETE_LINE:<n>': '[<n>M',  # delete <n> lines
-    'DELETE_CHARACTER:<n>': '[<n>L'  # delete <n> characters
-}
+
+# SOFT RESET CHANGES
+# Cursor visibility      :  Visible (DECTEM)
+# Numeric Keypad         :  Numeric Mode (DECNKM)
+# Cursor Keys Mode       :  Normal Mode (DECCKM)
+# Top and Bottom Margins :  Top=1, Bottom=Console height (DECSTBM)
+# Character Set          :  US ASCII
+# Graphics Rendition     :  Default/Off (SGR)
+# Save cursor state      :  Home position (0,0) (DECSC)
+
+# `ASCII_MODE` -> `DEC_LINE_DRAWING_MODE`
+#    `!`  ->  `!`           `4`  ->  `4`           `H`  ->  `H`           `\`  ->  `\`           `p`  ->  `⎻`
+#    `"`  ->  `"`           `5`  ->  `5`           `I`  ->  `I`           `]`  ->  `]`           `q`  ->  `─`
+#    `#`  ->  `#`           `6`  ->  `6`           `J`  ->  `J`           `^`  ->  `^`           `r`  ->  `⎼`
+#    `$`  ->  `$`           `7`  ->  `7`           `K`  ->  `K`           `_`  ->  ``            `s`  ->  `⎽`
+#    `%`  ->  `%`           `8`  ->  `8`           `L`  ->  `L`           ```  ->  `♦`           `t`  ->  `├`
+#    `&`  ->  `&`           `9`  ->  `9`           `M`  ->  `M`           `a`  ->  `▒`           `u`  ->  `┤`
+#    `'`  ->  `'`           `:`  ->  `:`           `N`  ->  `N`           `b`  ->  `␉`           `v`  ->  `┴`
+#    `(`  ->  `(`           `;`  ->  `;`           `O`  ->  `O`           `c`  ->  `␌`           `w`  ->  `┬`
+#    `)`  ->  `)`           `<`  ->  `<`           `P`  ->  `P`           `d`  ->  `␍`           `x`  ->  `│`
+#    `*`  ->  `*`           `=`  ->  `=`           `Q`  ->  `Q`           `e`  ->  `␊`           `y`  ->  `≤`
+#    `+`  ->  `+`           `>`  ->  `>`           `R`  ->  `R`           `f`  ->  `°`           `z`  ->  `≥`
+#    ``   ->  ``            `?`  ->  `?`           `S`  ->  `S`           `g`  ->  `±`           `{`  ->  `π`
+#    ``   ->  ``            `@`  ->  `@`           `T`  ->  `T`           `h`  ->  `␤`           `|`  ->  `≠`
+#    `-`  ->  `-`           `A`  ->  `A`           `U`  ->  `U`           `i`  ->  `␋`           `}`  ->  `£`
+#    `.`  ->  `.`           `B`  ->  `B`           `V`  ->  `V`           `j`  ->  `┘`           `~`  ->  `·`
+#    `/`  ->  `/`           `C`  ->  `C`           `W`  ->  `W`           `k`  ->  `┐`
+#    `0`  ->  `0`           `D`  ->  `D`           `X`  ->  `X`           `l`  ->  `┌`
+#    `1`  ->  `1`           `E`  ->  `E`           `Y`  ->  `Y`           `m`  ->  `└`
+#    `2`  ->  `2`           `F`  ->  `F`           `Z`  ->  `Z`           `n`  ->  `┼`
+#    `3`  ->  `3`           `G`  ->  `G`           `[`  ->  `[`           `o`  ->  `⎺`
+
 NAMED_CODES = {
     'AMPERSAND': '$a',  # ampersand
     'PIPE': '$b',  # pipe
@@ -33,35 +181,7 @@ NAMED_CODES = {
     'PUSHD_PLUS': '$+',  # will display plus signs (+) one for each level of the PUSHD directory stack
     'DEFAULT': '$p$g'  # drive/path followed by >
 }
-CURSOR_VISIBILITY = {
-    'START_BLINKING_CURSOR': '[?12h',  # start the cursor blinking
-    'STOP_BLINKING_CURSOR': '[?12l',  # stop blinking the cursor
-    'SHOW_CURSOR': '[?25h',  # show the cursor
-    'HIDE_CURSOR': '[?25l',  # hide the cursor
-}
-CURSOR_POSITIONING = {
-    'CURSOR_UP:<n>': '[<n>A',  # cursor up
-    'CURSOR_DOWN:<n>': '[<n>B',  # cursor down
-    'CURSOR_RIGHT:<n>': '[<n>C',  # cursor forward/right
-    'CURSOR_LEFT:<n>': '[<n>D',  # cursor backward/left
-    'CURSOR_LINE_DOWN:<n>': '[<n>E',  # cursor next Line/down
-    'CURSOR_LINE_UP:<n>': '[<n>F',  # cursor previous Line/up
-    'CURSOR_COLUMN_IN_LINE:<n>': '[<n>G',  # cursor moves to nth position horizontally in the current line
-    'CURSOR_OPPOSITE_RETURN:<n>': '[<n>M',  # move cursor up one line, opposite of return
-    'CURSOR_LINE_IN_COLUMN:<n>': '[<n>d'  # cursor moves to the nth position vertically in the current column
-}
-CURSOR_SHAPE = {
-    'CURSOR_SHAPE_DEFAULT': '[0 q',  # Default cursor shape configured by the user
-    'CURSOR_SHAPE_BLINKING_BLOCK': '[1 q',  # Blinking block cursor shape
-    'CURSOR_SHAPE_STEADY_BLOCK': '[2 q',  # Steady block cursor shape
-    'CURSOR_SHAPE_BLINKING_UNDERLINE': '[3 q',  # Blinking underline cursor shape
-    'CURSOR_SHAPE_STEADY_UNDERLINE': '[4 q',  # Steady underline cursor shape
-    'CURSOR_SHAPE_BLINKING_BAR': '[5 q',  # Blinking bar cursor shape
-    'CURSOR_SHAPE_STEADY_BAR': '[6 q'  # Steady bar cursor shape
-}
-WINDOWS_TITLE = {
-    'TITLE:<n>': ']0;<n>'  # sets windows title
-}
+
 ENVIRONMENT_VARIABLE = {
     'ALL_USER_PROFILE': '%ALLUSERSPROFILE%',
     'APP_DATA': '%APPDATA%',
@@ -145,56 +265,8 @@ POWERLINE = {
     'LINUX': '',
     'ANDROID': ''
 }
-TABS = {
-    'CURSOR_FORWARD_TAB:<n>': '[<n>I',  # cursor horizontal (forward) tab
-    'CURSOR_BACKWARD_TAB:<n>': '[<n>Z'  # cursor horizontal (backwards) tab
-}
-TEXT_FORMATTING = {
-    'DEFAULT_FG_BG': '[0m',  # returns all attributes to the default state prior to modification
-    'ADD_BRIGHT_FG': '[1m',  # applies brightness/intensity flag to foreground color
-    'ADD_ITALICS': '[3m',  # applies italic flag
-    'REMOVE_BRIGHT_FG': '[22m',  # removes brightness/intensity flag from foreground color
-    'ADD_UNDERLINE': '[4m',  # adds underline
-    'REMOVE_UNDERLINE': '[24m',  # removes underline
-    'SWAP_FG_BG': '[7m',  # swaps foreground and background colors
-    'UNSWAP_FG_BG': '[27m',  # positive text (not reversed)
-    'RETURN_FG_BG': '[27m',  # returns foreground/background to normal
-    'BLACK_FG': '[30m',  # applies non-bold/bright black to foreground
-    'RED_FG': '[31m',  # applies non-bold/bright red to foreground
-    'GREEN_FG': '[32m',  # applies non-bold/bright green to foreground
-    'YELLOW_FG': '[33m',  # applies non-bold/bright yellow to foreground
-    'BLUE_FG': '[34m',  # applies non-bold/bright blue to foreground
-    'MAGENTA_FG': '[35m',  # applies non-bold/bright magenta to foreground
-    'CYAN_FG': '[36m',  # applies non-bold/bright cyan to foreground
-    'WHITE_FG': '[37m',  # applies non-bold/bright white to foreground
-    'DEFAULT_FG': '[39m',  # applies only the foreground portion of the defaults (see 0)
-    'BLACK_BG': '[40m',  # applies non-bold/bright black to background
-    'RED_BG': '[41m',  # applies non-bold/bright red to background
-    'GREEN_BG': '[42m',  # applies non-bold/bright green to background
-    'YELLOW_BG': '[43m',  # applies non-bold/bright yellow to background
-    'BLUE_BG': '[44m',  # applies non-bold/bright blue to background
-    'MAGENTA_BG': '[45m',  # applies non-bold/bright magenta to background
-    'CYAN_BG': '[46m',  # applies non-bold/bright cyan to background
-    'WHITE_BG': '[47m',  # applies non-bold/bright white to background
-    'DEFAULT_BG': '[49m',  # applies only the background portion of the defaults (see 0)
-    'BOLD_BLACK_FG': '[90m',  # applies bold/bright black to foreground
-    'BOLD_RED_FG': '[91m',  # applies bold/bright red to foreground
-    'BOLD_GREEN_FG': '[92m',  # applies bold/bright green to foreground
-    'BOLD_YELLOW_FG': '[93m',  # applies bold/bright yellow to foreground
-    'BOLD_BLUE_FG': '[94m',  # applies bold/bright blue to foreground
-    'BOLD_MAGENTA_FG': '[95m',  # applies bold/bright magenta to foreground
-    'BOLD_CYAN_FG': '[96m',  # applies bold/bright cyan to foreground
-    'BOLD_WHITE_FG': '[97m',  # applies bold/bright white to foreground
-    'BOLD_BLACK_BG': '[100m',  # applies bold/bright black to background
-    'BOLD_RED_BG': '[101m',  # applies bold/bright red to background
-    'BOLD_GREEN_BG': '[102m',  # applies bold/bright green to background
-    'BOLD_YELLOW_BG': '[103m',  # applies bold/bright yellow to background
-    'BOLD_BLUE_BG': '[104m',  # applies bold/bright blue to background
-    'BOLD_MAGENTA_BG': '[105m',  # applies bold/bright magenta to background
-    'BOLD_CYAN_BG': '[106m',  # applies bold/bright cyan to background
-    'BOLD_WHITE_BG': '[107m'  # applies bold/bright white to background
-}
-CONTROL_CHARACTERS = {
+
+CONTROL_CODES = {
     'CONTROL_ENTER': '^C',  # carriage return and line feed.
     'CONTROL_FORM_FEED': '^L',  # form feed.
     'CONTROL_BACKSPACE': '^H',  # backspace.
@@ -232,28 +304,27 @@ Maximum prompt length: {MAX_PROMPT_LEN}
 Special characters:    {str(SPECIAL_CHARS)}
 """)
 
-N_LESS_MAP = {**TEXT_FORMATTING, **CURSOR_SHAPE, **CURSOR_VISIBILITY, **ERASING_AND_CLEARING}
-N_PRESENT_MAP = {**TABS, **WINDOWS_TITLE, **CURSOR_POSITIONING, **DELETING}
-ESC_LESS_MAP = {**NAMED_CODES, **ENVIRONMENT_VARIABLE, **POWERLINE, **CONTROL_CHARACTERS}
+NON_ANSI_MAP = {**NAMED_CODES, **ENVIRONMENT_VARIABLE, **POWERLINE, **CONTROL_CODES}
 
 while True:
-    user_prompt = input('What would you like your prompt to be? ')
+    user_prompt = input('What would you like your prompt to be? \n ')
     cleaned_prompt = user_prompt.strip().rstrip().replace('%', '%%').split(' ')
     processed_prompt = []
     for block in cleaned_prompt:
-        if block in N_LESS_MAP:
-            processed_prompt.append(f'$E{N_LESS_MAP.get(block, block)}')
-        elif '<' in block and '>' in block:
+        if '<' in block and '>' in block:
             n_var = block[block.index('<'):block.index('>')+1].replace('>', '').replace('<', '')
             print(n_var)
             block = f'{block[:block.index("<") + 1]}n>'
             print(block)
-            for key in N_PRESENT_MAP.keys():
+            for key in ANSI_FORMATTING.keys():
                 if block == key:
-                    processed_prompt.append(f'$E{N_PRESENT_MAP.get(block, block).replace("<n>", n_var)}')
+                    processed_prompt.append(ANSI_FORMATTING.get(block, block).replace("<n>", n_var).replace("\033",
+                                                                                                            "$E"))
                     break
-        elif block in ESC_LESS_MAP:
-            processed_prompt.append(ESC_LESS_MAP.get(block, block))
+        elif block in NON_ANSI_MAP:
+            processed_prompt.append(NON_ANSI_MAP.get(block, block))
+        elif block in ANSI_FORMATTING:
+            processed_prompt.append(ANSI_FORMATTING.get(block, block).replace('\033', '$E'))
         else:
             for key, value in NAMED_CODES.items():
                 if block == key:
@@ -265,6 +336,7 @@ while True:
             else:
                 processed_prompt += block
 
+    print(processed_prompt)
     cmd_command = ''.join(processed_prompt)
 
     if len(cmd_command) <= MAX_PROMPT_LEN:
